@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 function InfiniteZoneScrollSprat({ zones = [] }) {
   const wrapperRef = useRef(null);
   const imageRef = useRef(null);
-  const [activeBg, setActiveBg] = useState("#2b446b");
+  const [activeBg, setActiveBg] = useState("#354180");
   
 
   

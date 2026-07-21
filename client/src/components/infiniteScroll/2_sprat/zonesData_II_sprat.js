@@ -1,6 +1,6 @@
 export const zones = [
   {
-    bgColor: "#2b446b",
+    bgColor: "#354180",
     text: [
       {
         title: "Future zone",

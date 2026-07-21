@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef, useState } from "react";
 
 function InfiniteSOSScrollMobile({ items = [] }) {
   const wrapperRef = useRef(null);
-  const [activeBg, setActiveBg] = useState(items[0]?.bgColor || "#2b446b");
+  const [activeBg, setActiveBg] = useState(items[0]?.bgColor || "#354180");
 
   useLayoutEffect(() => {
     if (!wrapperRef.current || !items.length) return;

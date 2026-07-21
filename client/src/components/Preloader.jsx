@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import preloaderLogo from '../assets/logoes/preloaderSG_logo.svg';
+import isGrb from '../assets/is_grb.svg';
 
 const Preloader = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -11,7 +11,7 @@ const Preloader = () => {
     const timer = setTimeout(() => {
       setIsLoaded(true);
       document.body.style.overflowY = "scroll";
-    }, 2200); // 2.2 sekunde
+    }, 800);
 
     const handleLoad = () => {
       setIsLoaded(true);
@@ -32,13 +32,12 @@ const Preloader = () => {
   return (
     <div className="preloader">
       <div className="preloader-img">
-        <img src={preloaderLogo} alt="Preloader logo" />
-        <div className="sunce"></div>
+        <img src={isGrb} alt="International School" />
 
       </div>
       <div className="title">
-          <h1>Savremena</h1>
-          <h3>osnovna škola</h3>
+          <h1>International</h1>
+          <h3>school</h3>
         </div>
     </div>
   );

@@ -9,7 +9,6 @@
     @media only screen and (max-width: 992px) {
       // display: none;
     }
-  
     &--base {
       position: sticky;
       top: 20%;
@@ -33,10 +32,10 @@
         z-index: 0;
 
         img {
-          width: 30%;
+          width: 15%;
 
           @media only screen and (max-width: 992px) {
-            width: 90%;
+            width: 40%;
           }
 
         
@@ -76,7 +75,7 @@
 
       .title {
               padding-top: 20px;
-              color: #2b446b;
+              color: #354180;
               h3 {
                   text-align: left;
                   margin-top: -15px;
@@ -104,4 +103,3 @@
       }
     }
   }
-  

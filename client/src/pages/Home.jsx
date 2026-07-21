@@ -38,14 +38,14 @@ function Home() {
       <main className="home">
         <Preloader />
         <SectionHero />
-        <FormSection />
+        <FormSection eyebrow="Prijavite se odmah" title="Izaberite školu koja razvija pun potencijal vašeg deteta" text="Obezbedite jedno od 20 mesta u novom odeljenju." />
         
         <TitleRevealHomeHolder />
         <StackScrollWrapper />
         
         <Section_II_sprat />
         <InfiniteSOSScrollWrapper />
-        <FormSection className="form-section-2"/>
+        <FormSection eyebrow="Prijavite se odmah" title="Obezbedite svom detetu školovanje sa osmehom" text="Obezbedite jedno od 20 mesta u novom odeljenju."  className="form-section-2"/>
         
         <PinnedCtaSectionWrapper />
         <ParallaxSection8Wrapper />
@@ -53,7 +53,7 @@ function Home() {
         <ParallaxSection9Wrapper />
 
         <FloatingWrapper />
-        <FormSection className="form-section-3" id="prijava-2"/>
+        <FormSection eyebrow="Prijavite se odmah" title="Izaberite školovanje u kome vaše dete raste i napreduje" text="Obezbedite jedno od 20 mesta u novom odeljenju."  className="form-section-3" id="prijava-2"/>
         <Footer />
       </main>
     );

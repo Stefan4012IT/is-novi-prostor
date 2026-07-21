@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 function InfiniteSOSScroll({ items = [] }) {
   const wrapperRef = useRef(null);
   const imageRef = useRef(null);
-  const [activeBg, setActiveBg] = useState(items[0]?.bgColor || "#2b446b");
+  const [activeBg, setActiveBg] = useState(items[0]?.bgColor || "#354180");
 
   useEffect(() => {
     items.forEach((item) => {

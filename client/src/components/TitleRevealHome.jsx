@@ -27,7 +27,7 @@ const TitleRevealHome = () => {
 
   return (
     <h3 ref={titleRef} className="title-reveal">
-      sada u još boljem okruženju.
+      more room to grow.
     </h3>
   );
 };

@@ -10,7 +10,7 @@ const initialFormData = {
   website: "", // honeypot
 };
 
-function FormSection({ className, id }) {
+function FormSection({ eyebrow, title, text, className, id }) {
   const [formData, setFormData] = useState(initialFormData);
   const [errors, setErrors] = useState({});
   const [submitMessage, setSubmitMessage] = useState("");
@@ -189,10 +189,10 @@ function FormSection({ className, id }) {
     <section className={`form-section ${className}`} id={id}>
       <div className="form-section__inner">
         <div className="form-section__intro">
-          <h4 className="form-section__eyebrow">Prijavite se odmah</h4>
-          <h3 className="form-section__title">Obezbetite svom detetu školovanje sa osmehom</h3>
+          <h4 className="form-section__eyebrow">{eyebrow}</h4>
+          <h3 className="form-section__title">{title}</h3>
           <p className="form-section__text">
-            Obezbedite jedno od 20 mesta u novom odeljenju.
+            {text}
           </p>
         </div>
 

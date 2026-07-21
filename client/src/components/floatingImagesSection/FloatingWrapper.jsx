@@ -2,7 +2,7 @@ import React from "react";
 import useIsMobile from "../../components/infiniteScroll/common/useIsMobile";
 import FloatingImagesSectionDesktop from "./FloatingImagesSectionDesktop";
 import FloatingImagesSectionMobile from "./FloatingImagesSectionMobile";
-import logo from "../../assets/SG_logo.svg";
+import isGrb from "../../assets/is_grb.svg";
 
 const FloatingWrapper = () => {
   const isMobile = useIsMobile();
@@ -14,11 +14,11 @@ const FloatingWrapper = () => {
         <div className="under-title">
           {/* <h1>savremena</h1>
           <h2>gimnazija</h2> */}
-          <img src={logo} alt="savremena osnovna skola" />
+          <img src={isGrb} alt="International School" />
         </div>
         <div className="title">
-            <h1>Savremena</h1>
-            <h3>osnovna škola</h3>
+            <h1>International</h1>
+            <h3>school</h3>
           </div>
       </div>
       <div className="section-10--overlay">

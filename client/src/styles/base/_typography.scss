@@ -1,40 +1,5 @@
-@font-face {
-    font-family: 'KHTeka';
-    src: url('../../assets/fonts/kht-font/KHTeka-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'KHTeka';
-    src: url('../../assets/fonts/kht-font/KHTeka-Regular.ttf') format('truetype');
-    font-weight: 300;
-    font-style: regular;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'KHTeka';
-    src: url('../../assets/fonts/kht-font/KHTeka-Light.ttf') format('truetype');
-    font-weight: 200;
-    font-style: light;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'KHTeka';
-    src: url('../../assets/fonts/kht-font/KHTeka-Bold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: bold;
-    font-display: swap;
-  }
-
-  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
-
 h1 {
-    // font-family: 'KHTeka', sans-serif;
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: 'Khand', sans-serif;
     font-weight: 700;
     font-size: 16em;
     line-height: 0.9em;
@@ -66,8 +31,7 @@ h1 {
 }
 
 h2 {
-    // font-family: 'KHTeka', sans-serif;
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: 'Khand', sans-serif;
     font-weight: 700;
     font-size: 12em;
     line-height: 0.9em;
@@ -95,8 +59,7 @@ h2 {
 }
 
 h3 {
-  // font-family: 'KHTeka', sans-serif;
-  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: 'Khand', sans-serif;
   font-size: 7em; //bilo 4.4em
   font-weight: 700;
   line-height: .9em;
@@ -124,8 +87,7 @@ h3 {
 }
 
 h4 {
-    // font-family: 'KHTeka', sans-serif;
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: 'Khand', sans-serif;
     font-weight: 200;
     font-size: 3.2em;
     line-height: 0.8em;
@@ -154,8 +116,7 @@ h4 {
 }
 
 h6 {
-    // font-family: 'KHTeka', sans-serif;
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: 'Khand', sans-serif;
     font-weight: 500;
     font-size: 2.6em;
     line-height: 0.8em;
@@ -172,6 +133,7 @@ h6 {
 }
 
 p {
+  font-family: 'Saira', sans-serif;
   font-size: 2.6em;
   font-weight: 200;
   line-height: 1.1;
@@ -195,7 +157,7 @@ p {
 }
 
 a {
-  font-family: 'KHTeka', sans-serif;
+  font-family: 'Saira', sans-serif;
   line-height: 1.1;
   letter-spacing: -0.05em;
   font-size: 2.6em;
@@ -207,6 +169,13 @@ a {
   @media screen and (max-width: 992px) {
     font-size: 2em;
   }
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: 'Saira', sans-serif;
 }
 
 .zone-text, .zone-text-II-sprat, .zone-text-III-sprat, .zone-text-IV-sprat {

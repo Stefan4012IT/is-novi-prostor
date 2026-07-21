@@ -2,7 +2,7 @@
   padding: 5vh 3vw;
   position: relative;
   z-index: 99999;
-  background: #f7b815;
+  background: #354180;
 
   
 
@@ -78,14 +78,18 @@
       padding: 0 16px;
       border: none;
     //   border: 1px solid #000;
-      background: rgb(277 209 23 / 50%);
+      background: #FFF;
       border-radius: 50px;
-      color: #2b446b;
+      color: #354180;
       outline: none;
 
+      &:focus {
+        background: #FFF;
+      }
+
       &::placeholder {
-        color: #efefef;
-        font-family: 'KHTeka', sans-serif;
+        color: #7180ac;
+        font-family: 'Saira', sans-serif;
         font-weight: 500;
       }
     }
@@ -93,9 +97,9 @@
     input:-webkit-autofill:hover,
     input:-webkit-autofill:focus,
     input:-webkit-autofill:active {
-    -webkit-text-fill-color: #2b446b; // boja teksta
+    -webkit-text-fill-color: #354180; // boja teksta
     transition: background-color 9999s ease-in-out 0s;
-    box-shadow: 0 0 0px 1000px #ffd11780 inset; // tvoja pozadina
+    box-shadow: 0 0 0px 1000px #FFF inset;
     }
   }
 
@@ -113,7 +117,7 @@
     border: none;
     border-radius: 50px;
     background-color: #FFF;
-    color: #2b446b;
+    color: #354180;
     text-transform: uppercase;
     font-weight: 600;
   }
@@ -138,21 +142,25 @@
 }
 
 .form-section-2 {
-    background: #9d1516;
+    background: #354180;
 
     input {
       width: 100%;
       min-height: 52px;
       padding: 0 16px;
       border: none;
-      background: #7a1016;
+      background: #FFF;
       border-radius: 50px;
-      color: #FFF;
+      color: #354180;
       outline: none;
 
+      &:focus {
+        background: #FFF;
+      }
+
       &::placeholder {
-        color: #aeaeae;
-        font-family: 'KHTeka', sans-serif;
+        color: #7180ac;
+        font-family: 'Saira', sans-serif;
         font-weight: 300;
       }
     }
@@ -160,9 +168,9 @@
     input:-webkit-autofill:hover,
     input:-webkit-autofill:focus,
     input:-webkit-autofill:active {
-    -webkit-text-fill-color: #FFF; // boja teksta
+    -webkit-text-fill-color: #354180; // boja teksta
     transition: background-color 9999s ease-in-out 0s;
-    box-shadow: 0 0 0px 1000px #7a1016 inset; // tvoja pozadina
+    box-shadow: 0 0 0px 1000px #FFF inset;
     }
 
 }
@@ -171,22 +179,26 @@
   background-color: #FFF;
 
   .form-section__title, .form-section__eyebrow, .form-section__text, .form-section__error, .form-section__message {
-    color: #2b446b;
+    color: #354180;
   }
   
   input {
       width: 100%;
       min-height: 52px;
       padding: 0 16px;
-      border: 1px solid #2b446b;
+      border: 1px solid #354180;
       background: #FFF;
       border-radius: 50px;
-      color: #2b446b;
+      color: #354180;
       outline: none;
 
+      &:focus {
+        background: #FFF;
+      }
+
       &::placeholder {
-        color: #aeaeae;
-        font-family: 'KHTeka', sans-serif;
+        color: #7180ac;
+        font-family: 'Saira', sans-serif;
         font-weight: 300;
       }
     }
@@ -194,14 +206,14 @@
     input:-webkit-autofill:hover,
     input:-webkit-autofill:focus,
     input:-webkit-autofill:active {
-    -webkit-text-fill-color: #2b446b; // boja teksta
+    -webkit-text-fill-color: #354180; // boja teksta
     transition: background-color 9999s ease-in-out 0s;
-    border: #2b446b 1px solid;
+    border: #354180 1px solid;
     box-shadow: 0 0 0px 1000px #FFF inset; // tvoja pozadina
     }
 
     .form-section__submit {
-      background-color: #2b446b;
+      background-color: #354180;
       color: #FFF;
     }
 
@@ -298,7 +310,7 @@
   margin: 0 0 20px;
   font-size: 20px;
   line-height: 1.4;
-  color: #2b446b;
+  color: #354180;
   font-weight: 600;
 }
 
@@ -307,7 +319,7 @@
   border: none;
   border-radius: 999px;
   padding: 12px 24px;
-  background: #2b446b;
+  background: #354180;
   color: #fff;
   font-size: 16px;
   font-weight: 600;

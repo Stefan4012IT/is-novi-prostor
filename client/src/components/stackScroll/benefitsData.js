@@ -1,23 +1,23 @@
 const benefitsData = [
     {
-      title: "INOVATIVNO UČENJE",
-      subtitle: "Osmišljeno za decu koja mogu više",
-      text: "U Savremenoj ne verujemo u pasivno učenje, već da se do znanja dolazi kroz istraživanje, zabavu, igru, drugačiji pristup i osmeh. STEAM projekti, praktičan rad, Cambridge standard i multidisciplinarni časovi znanje pretvaraju u iskustvo. A iskustvo ostaje zauvek.",
+      title: "CAMBRIDGE STANDARDI",
+      subtitle: "Međunarodno priznate kvalifikacije.",
+      text: "Cambridge program obuhvata IGCSE, AS i A Level kurikulume, a stečene kvalifikacije učenicima omogućavaju nastavak obrazovanja u Srbiji i inostranstvu.",
     },
     {
-      title: "NAJSAVREMENIJA TEHNOLOGIJA U NASTAVI",
-      subtitle: "Tehnologija koja služi detetu — ne obrnuto",
-      text: "Ono što Savremenu zaista izdvaja je to kako učenici umesto pasivni konzumenti tehnologije postaju kreativni kreatori igrica i robota. Svaka tehnologija ima jasnu svrhu, priprema učenike za buducnost i proces učenje podiže na viši nivo.",
+      title: "MENTORSKI PRISTUP",
+      subtitle: "Lični mentor za napredak svakog učenika",
+      text: "Svaki učenik bira ličnog mentora koji mu pruža podršku u učenju, postavljanju ciljeva, razvoju interesovanja i prevazilaženju izazova.",
     },
     {
-      title: "POSVEĆENI NASTAVNICI",
-      subtitle: "Podrška i podsticaj za svako dete",
-      text: "Stručnost, empatija, kreativnost i strast prema radu sa decom nisu opcija, već standard za učitelje i nastavnike Savreme. I to je siguran recept da se svaki učenik osećaj vidjeno, voljeno, podržano i da svako dete ostvari i prestigne svoj potencijal.",
+      title: "TRI NIVOA PODRŠKE ZA USPEH.",
+      subtitle: "Podrška kroz svaki korak.",
+      text: "Učenici dobijaju svakodnevnu akademsku podršku, individualno mentorsko usmeravanje i stručnu pomoć tokom istraživanja i prijavljivanja na univerzitete.",
     },
     {
-      title: "LIFE SKILLS PROGRAM ŽIVOTNIH VEŠTINA",
-      subtitle: "Priprema dete za stvarni svet",
-      text: "Pored zvaničnog programa, svako dete uči i ono što mu je zaista potrebno kroz život — kako da upravlja novcem, kako da reši konflikt, kako da kuva, šije, čuva prirodu, razume emocije i snađe se u stvarnom svetu. Zato je Savremena škola koja zaista priprema decu za život.",
+      title: "OTVORENA VRATA FAKULTETA ŠIROM SVETA.",
+      subtitle: "Od izbora do prijave",
+      text: "Savetnik za upis pomaže učenicima da istraže univerzitete i programe, pripreme dokumentaciju, lične izjave i prijave, kao i da se pripreme za intervjue.",
     },
   ];
   

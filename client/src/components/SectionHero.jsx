@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import SG_logo from "../assets/SG_logo.svg";
+import isGrb from "../assets/is_grb.svg";
 import intro_img_1 from "../assets/hero/intro_sos_1.jpg";
 import intro_img_2 from "../assets/hero/intro_sos_2.jpg";
 import intro_img_3 from "../assets/hero/intro_sos_3.jpg";
 import intro_img_4 from "../assets/hero/intro_sos_4.jpg";
-import intro_skola from "../assets/hero/skola.svg";
+import ministarstvoProsvet from "../assets/ministarstvo-prosvet.png";
+import cambridgeBlack from "../assets/cambridge_black.png";
 import sos_novi_prostor_video from "../assets/hero/sos_novi_prostor_final_720p_30fr.mov";
 
 import RotatingWords from "./RotatingWords";
@@ -32,22 +33,25 @@ const SectionHero = () => {
   return (
     <section className="hero section-1">
       <div className="logo-box">
-        <img src={SG_logo} alt="SG_logo" />
+        <img src={isGrb} alt="Grb Internacionalne škole" />
       </div>
 
       <div className="sg_watermark">
         <div className="line_1"></div>
         <div className="square-name">
           <div className="name">
-            <h6 className="big">Savremena</h6>
-            <h6 className="small">osnovna</h6>
-            <img src={intro_skola} alt="Skola" />
+            <h6 className="big">International</h6>
+            <h6 className="small">school</h6>
+            <div className="accreditation-logos">
+              <img src={ministarstvoProsvet} alt="Ministarstvo prosvete" />
+              <img src={cambridgeBlack} alt="Cambridge International Education" />
+            </div>
           </div>
         </div>
       </div>
 
       <div className="hero--title-right">
-        <h1>Savremena se širi. <br className="mobile-break" />Mesto vas čeka.</h1>
+        <h1>A SPACE FOR<br />THEIR NEXT CHAPTER</h1>
       </div>
 
       <div className="hero--second-title-line">
@@ -75,19 +79,15 @@ const SectionHero = () => {
 
         <div className="hero--paragraph-text">
           <h3>
-            Više mesta, više mogućnosti:{" "}
-            <span>Otvara se novo odeljenje I razreda</span>
+            A new address shaped around secondary school life
           </h3>
           <p>
-            Savremena osnovna škola se širi. U septembru 2026. otvara se novi
-            prostor koji je osmišljen od prve do poslednje prostorije sa jednim
-            ciljem: da deca imaju sve što im treba da se razvijaju, istražuju i
-            rastu.
-          </p>
-          <br />
-          <p>
-            Ovaj dodatni prostor donosi mogućnost da se otvori upis u još jedno
-            odeljenje prvog razreda.
+            International School Secondary dobija svoj prostor na novoj adresi
+            na Terazijama, u srcu Beograda, oblikovan prema ritmu i potrebama
+            srednjoškolaca. Na 1.300 m², sa 17 savremeno opremljenih učionica
+            i velikim amfiteatrom, nastava je osmišljena za aktivan rad,
+            različite grupe i celovito iskustvo učenja. Mesto za učenje,
+            stvaranje prijateljstava, nove ideje i sve što dolazi.
           </p>
         </div>
       </div>

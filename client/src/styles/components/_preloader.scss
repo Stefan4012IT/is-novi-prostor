@@ -24,7 +24,7 @@
 
     .title {
         padding-top: 20px;
-        color: #2b446b;
+        color: #354180;
         h3 {
             text-align: left;
             margin-top: -15px;
@@ -39,60 +39,19 @@
 
     .preloader-img {
         position: relative;
-        width: 500px;
-        height: 300px;
+        width: 220px;
+        height: 220px;
         z-index: 100;
 
         @media only screen and (max-width: 992px) {
-            height: 150px;
-            width: 251px;
+            width: 130px;
+            height: 130px;
           }
         img {
-            position: absolute;
-            width: auto;
-            height: 300px;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
             z-index: 100;
-            top: 0;
-            left: 0;
-
-            @media only screen and (max-width: 992px) {
-                height: 150px;
-                width: 251px;
-            }
-        }
-
-        .sunce {
-            position: absolute;
-            width: 97%;
-            z-index: 0;
-            background-color: #f7b815;
-            bottom: 1px;
-            left: 2px;
-            animation: sun-desktop 2s ease-in forwards;
-
-            @media only screen and (max-width: 992px) {
-                animation: sun-mobile 2s ease-in forwards;
-                bottom: 0px;
-            }
         }
     }
   }
-  
-  @keyframes sun-desktop {
-    0% {
-      height: 0;
-    }
-    100% {
-      height: 99%;
-    }
-  }
-  
-  @keyframes sun-mobile {
-    0% {
-      height: 0;
-    }
-    100% {
-      height: 149px;
-    }
-  }
-  

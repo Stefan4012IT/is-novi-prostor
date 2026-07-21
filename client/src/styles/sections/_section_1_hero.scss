@@ -18,11 +18,11 @@
 
     .logo-box {
         position: absolute;
-        height: 175px;
+        height: 260px;
 
         @media only screen and (max-width: 992px) {
             position: relative;
-            height: 65px;
+            height: 75px;
         }
 
         img {
@@ -34,28 +34,20 @@
     .sg_watermark {
         position: absolute;
         top: 0;
-        left: 20%;
+        left: calc(3vw + 290px);
         width: fit-content;
 
-        @media only screen and (max-width: 1440px) {
-            left: 25%;
-        }
-
-        @media only screen and (max-width: 1280px) {
-            left: 30%;
-        }
-
         @media only screen and (max-width: 992px) {
-            left: 50%;
+            left: 120px;
         }
 
         .line_1 {
-            height: 100px;
+            height: calc(6vh + 91px);
             width: 2px;
-            background-color: #2b446b;
+            background-color: #354180;
 
             @media only screen and (max-width: 992px) {
-                height: 50px;
+                height: 56px;
             }
         }
 
@@ -89,7 +81,7 @@
                     text-transform: none;
                     transform: translateY(-2PX);
                     font-weight: 600;
-                    color: #2b446b;
+                    color: #354180;
 
                     @media only screen and (max-width: 992px) {
                         transform: translateY(0PX);
@@ -99,7 +91,7 @@
                 .small {
                     transform: translateY(-8PX);
                     font-weight: 600;
-                    color: #2b446b;
+                    color: #354180;
                     @media only screen and (max-width: 992px) {
                         transform: translateY(-6PX);
                     }
@@ -107,14 +99,40 @@
 
                 h6 {
                     text-align: left;
-                }
-
-                img {
-                    width: 80px;
-                    margin-left: 75px;
+                    font-size: 4.6em;
 
                     @media only screen and (max-width: 992px) {
-                        width: 55px;
+                        font-size: 2.5em;
+                    }
+                }
+
+                .accreditation-logos {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-top: -4px;
+
+                    img {
+                        width: 110px;
+                        height: auto;
+                        margin: 0;
+                    }
+
+                    img:last-child {
+                        width: 82px;
+                    }
+
+                    @media only screen and (max-width: 992px) {
+                        gap: 6px;
+                        margin-top: 0;
+
+                        img {
+                            width: 62px;
+                        }
+
+                        img:last-child {
+                            width: 48px;
+                        }
                     }
                 }
             }
@@ -130,7 +148,7 @@
         text-align: right;
         align-self: flex-end;
         word-wrap: break-word;
-        color: #2b446b;
+        color: #354180;
 
         .mobile-break {
             display: none;
@@ -144,8 +162,8 @@
             width: 55%;
         }
 
-        @media only screen and (max-width: 1366px) {
-            width: 50%;
+        @media only screen and (max-width: 1440px) {
+            width: 65%;
 
         }
         @media only screen and (max-width: 1366px) {
@@ -176,7 +194,7 @@
     &--second-title-line {
         display: flex;
         flex-direction: row;
-        color: #2b446b;
+        color: #354180;
 
         @media only screen and (max-width: 992px) {
             flex-direction: column;
@@ -464,5 +482,3 @@
   color: #111;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
-
-
