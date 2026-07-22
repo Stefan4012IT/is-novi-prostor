@@ -224,11 +224,7 @@
         video {
             width: 100%;
             height: auto;
-            border-radius: 50px;
-
-            @media only screen and (max-width: 992px) {
-                border-radius: 30px;
-            }
+            border-radius: 0;
         }
 
         @media screen and (min-width: 2560px) {
@@ -274,27 +270,7 @@
 
             .rotate {
                 justify-self: flex-end;
-                left: 292px;
-
-                @media screen and (min-width: 2560px) {
-                    left: 362px;
-                }
-
-                @media only screen and (max-width: 1680px) {
-                    left: 243px;
-                }
-
-                @media only screen and (max-width: 1440px) {
-                    left: 203px;
-                }
-
-                @media only screen and (max-width: 1024px) {
-                    left: 180px;
-                }
-
-                @media only screen and (max-width: 992px) {
-                    left: 110px;
-                }
+                left: 2em;
             }
 
             @media screen and (min-width: 2560px) {
@@ -405,11 +381,7 @@
             height: auto;
             width: 100%;
             object-fit: cover;
-            border-radius: 50px;
-
-            @media only screen and (max-width: 992px) {
-                border-radius: 30px;
-            }
+            border-radius: 0;
         }
     }
 }
@@ -424,7 +396,6 @@
 
   @media only screen and (max-width: 992px) {
         width: 45%;
-        border-radius: 30px;
     }
 }
 
@@ -433,7 +404,6 @@
   display: block;
   @media only screen and (max-width: 992px) {
         width: 100%;
-        border-radius: 30px;
     }
 }
 

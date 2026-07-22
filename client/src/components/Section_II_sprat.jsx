@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import img_1 from "../assets/sprat_II/presection_img.png";
+import isGrb from "../assets/is_grb.svg";
 // import nacrt_II_sprat from '../assets/sprat_II/nacrt_II_sprat.svg'
 import pticice from '../assets/ptice2.svg'
 
@@ -47,8 +47,8 @@ useEffect(() => {
                 <img
                 ref={imgRef}
                 className="sticky-img"
-                src={img_1}
-                alt="sos"
+                src={isGrb}
+                alt="International School"
                 />
             </div>
         </div>

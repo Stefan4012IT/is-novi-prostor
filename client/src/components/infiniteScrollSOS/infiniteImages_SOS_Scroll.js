@@ -1,15 +1,11 @@
-import sportsHubImage from "../../assets/sos_zone/Sports_Hub.jpg";
-import scienceHubImage from "../../assets/sos_zone/Science_Hub.jpg";
-import artHubImage from "../../assets/sos_zone/Art_Hub.jpg";
-import parentsHubImage from "../../assets/sos_zone/Parents_Hub.jpg";
-import lunchTimeHubImage from "../../assets/sos_zone/Lunch_Time_Hub.jpg";
-import newClassImage from "../../assets/sos_zone/Novo_odeljenje.jpg";
+import infiniteImage1 from "../../assets/infinite/infinite-1.png";
+import infiniteImage2 from "../../assets/infinite/infinite-2.png";
+import infiniteImage3 from "../../assets/infinite/infinite-3.png";
+import infiniteImage4 from "../../assets/infinite/infinite-4.png";
 
 export {
-  sportsHubImage,
-  scienceHubImage,
-  artHubImage,
-  parentsHubImage,
-  lunchTimeHubImage,
-  newClassImage,
+  infiniteImage1,
+  infiniteImage2,
+  infiniteImage3,
+  infiniteImage4,
 };

@@ -65,13 +65,12 @@ function ParallaxSection8Mobile() {
     <section className="section-8 mobile" ref={sectionRef}>
       <div className="heading-box">
         <h2 className="title" ref={titleRef}>
-          <>Otvorena vrata uspešne <br/>budućnosti.</>
+          <>Cambridge obrazovanje<br />koje otvara vrata<br />sveta</>
         </h2>
       </div>
 
       <div className="text" ref={textRef}>
-        <p>Budućnost se ne čeka — ona se gradi. I svaki dan koji vaše dete provede Savremenoj je korak napred ka uspešnoj budućnosti.</p>
-        <p>Ovo je trenutak da postanete deo priče koja gradi uspešnu budućnost vašeg deteta. </p>
+        <p>Kao akreditovana Cambridge International School, International School pruža učenicima obrazovanje zasnovano na međunarodno priznatim IGCSE, AS i A Level programima. Nastava na engleskom jeziku, pažljivo odabran izbor predmeta i Cambridge kvalifikacije pružaju snažnu osnovu za nastavak školovanja i otvaraju vrata fakulteta u Srbiji i širom sveta.</p>
       </div>
 
       <img src={img_3} alt="Get in touch" className="sos_majka_dete" ref={imgRef} />

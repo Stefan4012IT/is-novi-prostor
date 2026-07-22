@@ -1,7 +1,8 @@
 .section-8 {
     position: relative;
-    height: 500px;
+    height: 650px;
     width: 100%;
+    margin-bottom: 8vh;
 
     @media screen and (min-width: 2560px) {
         height: 700px;
@@ -9,6 +10,7 @@
 
     @media screen and (max-width: 992px) {
         height: auto;
+        margin-bottom: 5vh;
         display: flex;
         flex-direction: column;
     }
@@ -16,12 +18,8 @@
     .heading-box {
         margin: 0;
         padding: 0;
-        width: 90%;
+        width: 50%;
         height: fit-content;
-
-        @media screen and (max-width: 1440px) {
-            width: 60%;
-        }
 
         @media screen and (max-width: 992px) {
             width: 100%;
@@ -42,8 +40,8 @@
     }
 
     .title {
-        margin: 40px 3vw;
-        width: 800px;
+        margin: 40px 0 0 3vw;
+        width: calc(100% - 3vw);
         text-align: left;
 
         @media screen and (max-width: 992px) {
@@ -65,16 +63,17 @@
     img {
         position: absolute;
         right: 0;
-        width: auto;
-        height: 500px;
+        width: 45%;
+        height: 100%;
         top: 0;
         z-index: 0;
+        object-fit: cover;
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px;
 
         @media screen and (max-width: 1280px) {
             width: 45%;
-            height: auto;
+            height: 100%;
         }
 
         @media screen and (max-width: 992px) {

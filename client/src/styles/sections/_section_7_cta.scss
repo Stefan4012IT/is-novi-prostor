@@ -4,7 +4,7 @@
     width: 100%;
     max-width: 100%;
     max-height: 100%;
-    margin: 0;
+    margin: 0 0 8vh;
     padding: 0;
     z-index: 1;
 
@@ -18,6 +18,7 @@
         min-height: 100%;
         max-height: none;
         height: fit-content;
+        margin-bottom: 5vh;
     }
 
     .heading-box {
@@ -31,6 +32,16 @@
             width: 100%;
             word-wrap: break-word;
             color:#354180;
+
+            .title-break-1920 {
+                display: none;
+            }
+
+            @media screen and (min-width: 1800px) and (max-width: 2200px) {
+                .title-break-1920 {
+                    display: block;
+                }
+            }
 
             @media screen and (max-width: 992px) {
                 padding: 5vh 20px 0px 20px;

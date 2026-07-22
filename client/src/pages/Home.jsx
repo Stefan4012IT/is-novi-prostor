@@ -38,14 +38,14 @@ function Home() {
       <main className="home">
         <Preloader />
         <SectionHero />
-        <FormSection eyebrow="Prijavite se odmah" title="Izaberite školu koja razvija pun potencijal vašeg deteta" text="Obezbedite jedno od 20 mesta u novom odeljenju." />
+        <FormSection eyebrow="Prijavite se odmah" title="Izaberite obrazovanje koje otvara vrata uspešne budućnosti." text="Your child’s future just got more room to grow." />
         
         <TitleRevealHomeHolder />
         <StackScrollWrapper />
         
         <Section_II_sprat />
         <InfiniteSOSScrollWrapper />
-        <FormSection eyebrow="Prijavite se odmah" title="Obezbedite svom detetu školovanje sa osmehom" text="Obezbedite jedno od 20 mesta u novom odeljenju."  className="form-section-2"/>
+        <FormSection eyebrow="Prijavite se odmah" title="Izaberite obrazovanje koje otvara vrata uspešne budućnosti." text="Your child’s future just got more room to grow." className="form-section-2"/>
         
         <PinnedCtaSectionWrapper />
         <ParallaxSection8Wrapper />
@@ -53,11 +53,9 @@ function Home() {
         <ParallaxSection9Wrapper />
 
         <FloatingWrapper />
-        <FormSection eyebrow="Prijavite se odmah" title="Izaberite školovanje u kome vaše dete raste i napreduje" text="Obezbedite jedno od 20 mesta u novom odeljenju."  className="form-section-3" id="prijava-2"/>
+        <FormSection eyebrow="Prijavite se odmah" title="Izaberite obrazovanje koje otvara vrata uspešne budućnosti." text="Your child’s future just got more room to grow." className="form-section-3" id="prijava-2"/>
         <Footer />
       </main>
     );
   }
-  
   export default Home;
-  

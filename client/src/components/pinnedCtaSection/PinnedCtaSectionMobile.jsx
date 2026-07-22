@@ -62,7 +62,7 @@ function PinnedCtaSectionMobile() {
     <section className="section-7 mobile" ref={sectionRef}>
       <div className="heading-box">
         <h2 className="title" ref={titleRef}>
-          U Savremenoj, vaše dete uvek dobija više.
+          Znanje i podrška za siguran korak napred
         </h2>
       </div>
 
@@ -70,14 +70,17 @@ function PinnedCtaSectionMobile() {
 
       <div className="text" ref={bodyTextRef}>
         <p>
-          Savremena gimnazija nisu samo aktuelni programi i tehnologije – ona
-          podrazumeva podršku, razumevanje i put ka samostalnosti. Odabir prave
-          škole je osnovni korak za budući uspeh.
+          International School pruža učenicima prostor da istraže svoja
+          interesovanja, izaberu predmete koji odgovaraju njihovim planovima i
+          postepeno preuzmu veću odgovornost za sopstveno obrazovanje. Uz
+          Cambridge program, ličnog mentora i stručnu podršku pri izboru
+          fakulteta, razvijaju znanje, samostalnost i sigurnost u svoje odluke.
         </p>
         <p>
-          Kombinacijom Cambridge standarda, savremenih nastavnih programa,
-          inovativnog pristupa i okruženja punog podrške stvara se temelj za
-          uspešnu i sigurnu budućnost svakog učenika.
+          Međunarodna partnerstva škole dodatno im približavaju studije u
+          inostranstvu kroz direktan kontakt sa predstavnicima univerziteta,
+          posebne prezentacije studijskih programa i pristup stipendijama,
+          pogodnostima pri upisu i finansijskoj podršci.
         </p>
       </div>
 

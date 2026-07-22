@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import isGrb from "../assets/is_grb.svg";
-import intro_img_1 from "../assets/hero/intro_sos_1.jpg";
-import intro_img_2 from "../assets/hero/intro_sos_2.jpg";
-import intro_img_3 from "../assets/hero/intro_sos_3.jpg";
-import intro_img_4 from "../assets/hero/intro_sos_4.jpg";
+import isProstor1 from "../assets/hero/is_prostor_1.png";
+import isProstor2 from "../assets/hero/is_prostor_2.JPG";
+import isProstor3 from "../assets/hero/is_prostor_3.JPG";
+import isProstor4 from "../assets/hero/is_prostor_4.png";
 import ministarstvoProsvet from "../assets/ministarstvo-prosvet.png";
 import cambridgeBlack from "../assets/cambridge_black.png";
 import sos_novi_prostor_video from "../assets/hero/sos_novi_prostor_final_720p_30fr.mov";
@@ -14,10 +14,10 @@ const SectionHero = () => {
   const [activeImage, setActiveImage] = useState(null);
 
   const heroImages = [
-    { src: intro_img_1, alt: "Savremena novi prostor 1" },
-    { src: intro_img_2, alt: "Savremena novi prostor 2" },
-    { src: intro_img_3, alt: "Savremena novi prostor 3" },
-    { src: intro_img_4, alt: "Savremena novi prostor 4" },
+    { src: isProstor1, alt: "International School prostor 1" },
+    { src: isProstor2, alt: "International School prostor 2" },
+    { src: isProstor3, alt: "International School prostor 3" },
+    { src: isProstor4, alt: "International School prostor 4" },
   ];
 
   const openModal = (src) => {
@@ -58,13 +58,10 @@ const SectionHero = () => {
         <div className="hero--title-left">
           <RotatingWords
             words={[
-              "uspesi",
-              "ideje",
-              "uspomene",
-              "projekti",
-              "prostor",
-              "pobede",
-              "inovacije",
+              "SPACE",
+              "FORMATS",
+              "VISION",
+              "SUCCESS",
             ]}
           />
           <video

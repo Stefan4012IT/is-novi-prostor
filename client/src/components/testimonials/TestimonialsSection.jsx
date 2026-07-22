@@ -21,9 +21,9 @@ export default function TestimonialsSection() {
         
     </div>
       <div className="testimonials-section__inner">
-        <img src={img1} alt="sos_ptice" className="ptice" />
+        <img src={img1} alt="International School ilustracija" className="ptice" />
         <div className="testimonials-section__top">
-          <h3 className="testimonials-section__heading">,,Moje dete je procvetalo u Savremenoj"</h3>
+          <h3 className="testimonials-section__heading">Utisci iz International Schoola</h3>
 
           <div className="testimonials-section__nav">
             <button

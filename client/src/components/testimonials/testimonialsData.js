@@ -1,50 +1,50 @@
-import img1 from '../../assets/testimonials/VukosavaScekicJelisavac.jpg';
-import img2 from '../../assets/testimonials/MilosPavlovic.jpg';
-import img3 from '../../assets/testimonials/OliveraTesic.jpg';
-import img4 from '../../assets/testimonials/MarinaGrahovac.jpg';
-import img5 from '../../assets/testimonials/DraganStevanovic.jpg';
+import hanaJurenic from '../../assets/testimonials/hana-jurenic.png';
+import oljaGabric from '../../assets/testimonials/olja-gabric.png';
+import tanjaAndjelkovic from '../../assets/testimonials/tanja-andjelkovic.png';
+import jovanaIgnjatovic from '../../assets/testimonials/jovana-ignjatovic.png';
+import andjelaBorovic from '../../assets/testimonials/andjela-borovic.png';
 
 
 const testimonialsData = [
   {
     id: 1,
-    name: "Vukosava Šćekić Jelisavac",
-    subtitle: "RODITELJ",
-    title: "„Empatija, podrška i zajedništvo u praksi“",
-    text: `U Savremenoj školi moja deca imaju prostor da budu svoja, da razvijaju svoje talente i uče važne životne vrednosti poput empatije, podrške i zajedništva. Kao roditelj, posebno cenim što škola neguje različitost svakog deteta i gradi snažnu zajednicu kroz blisku saradnju sa roditeljima.`,
-    image: img1,
+    name: "Hana Jurenić",
+    subtitle: "MATURANTKINJA",
+    title: "Škola koja mi je pomogla da otkrijem šta želim u budućnosti",
+    text: `„Neke od najlepših godina svog života provela sam u International Schoolu. Upoznala sam nastavnike i prijatelje koji su ostavili snažan utisak na mene, a škola mi je pomogla da otkrijem šta želim u budućnosti. Upisala sam studije psihologije na univerzitetu u Španiji.”`,
+    image: hanaJurenic,
   },
   {
     id: 2,
-    name: "Miloš Pavlović",
+    name: "Ollja Gabrić",
     subtitle: "RODITELJ",
-    title: "„Bezbedno i podsticajno okruženje za razvoj“",
-    text: `U Savremenoj školi pronašli smo bezbedno i podsticajno okruženje u kome naše dete uči i razvija se uz posvećene i profesionalne nastavnike. Uz otvorenu komunikaciju i dodatne edukativne sadržaje, imamo potpuno poverenje da smo napravili pravi izbor za njegovo odrastanje i obrazovanje.`,
-    image: img2,
+    title: "International School mu je pružila podršku da napreduje",
+    text: `„Neizmerno smo zahvalni International Schoolu, nastavnicima i čitavom timu na obrazovanju koje je Eo stekao. Bio je zaista srećan tokom školovanja i imao je izuzetnu podršku na svim nivoima, od nastavnika i mentora do direktora škole.”`,
+    image: oljaGabric,
   },
   {
     id: 3,
-    name: "Olivera Tešić",
+    name: "Tanja Anđelković",
     subtitle: "RODITELJ",
-    title: "„Mesto gde deca procvetaju“",
-    text: `U Savremenoj školi moje dete je uz podršku i razumevanje nastavnika procvetalo, razvilo samopouzdanje i postalo spremno za dalje obrazovanje i život.`,
-    image: img3,
+    title: "I dalje o International Schoolu govore sa velikim osmehom i mnogo ljubavi",
+    text: `„U školi su naučili mnogo, ne samo u akademskom smislu već i o prijateljstvu, poštovanju nastavnika i empatiji. Najvažnije je to što i dalje o International Schoolu govore sa velikim osmehom i mnogo ljubavi.”`,
+    image: tanjaAndjelkovic,
   },
   {
     id: 4,
-    name: "Marina Grahovac",
-    subtitle: "RODITELJ",
-    title: "„Sve što želim za svoju decu – emotivni, intelektualni i fizički razvoj“",
-    text: `Ja sam od onih zadovoljnih roditelja. Ono što je meni važno jeste da primećujem na svojoj deci jedan emotivni, intelektualni i fizički razvoj. To je meni kao roditelju zaista dovoljno. Deca su prezadovoljna i mogu da razviju sve svoje talente, a samim tim mogu i da napreduju.`,
-    image: img4,
+    name: "Jovana Ignjatović",
+    subtitle: "MATURANTKINJA",
+    title: "Istinski globalno i dinamično okruženje za učenje",
+    text: `„Najviše mi se dopadaju međunarodni kurikulum i okruženje škole. Istražujemo globalne teme koje oblikuju današnji svet koji se neprestano menja, razmenjujemo ideje sa vršnjacima i učimo iz različitih perspektiva.”`,
+    image: jovanaIgnjatovic,
   },
   {
     id: 5,
-    name: "Dragan Stevanović",
-    subtitle: "RODITELJ",
-    title: "„Fokus na celokupan razvoj deteta“",
-    text: `Mi smo prezadovoljni školom i od srca bismo je preporučili svim našim prijateljima. Posebno cenimo način na koji se naše dete obrazuje – sa pažnjom, razumevanjem i fokusom na njegov celokupan razvoj.`,
-    image: img5,
+    name: "Anđela Borović",
+    subtitle: "UČENICA",
+    title: "Naši nastavnici su pristupačni i uvek spremni da pomognu",
+    text: `„Koristimo tehnologiju u učenju, što nam sve čini lakšim. Naši nastavnici su pristupačni i uvek spremni da nam dodatno objasne gradivo. Imamo i nekoliko nivoa podrške, uključujući mentore koje sami biramo i sa kojima se sastajemo svake nedelje kako bismo razgovarali o problemima ili svemu što nas muči.”`,
+    image: andjelaBorovic,
   },
 ];
 

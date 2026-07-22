@@ -96,7 +96,7 @@ function PinnedCtaSection() {
     <section className="section-7" ref={sectionRef}>
       <div className="heading-box">
         <h2 className="title" ref={titleRef}>
-          U Savremenoj, vaše dete <br/>uvek dobija više.
+          Znanje i podrška za siguran <br className="title-break-1920" />korak napred
         </h2>
       </div>
 
@@ -104,8 +104,8 @@ function PinnedCtaSection() {
       <img src={ctaImg} alt="Kids" className="kids-img" ref={imgRef} />
 
       <div className="text" ref={textRef}>
-        <p>Savremena nije samo škola sa dobrim programom. To je sredina koja formira decu — kroz mali razred gde svako dete dobija pažnju koju zaslužuje, kroz nastavu koja kombinuje tehnologiju i kreativnost, kroz Cambridge program koji otvara vrata i van granica Srbije, i kroz Life Skills Program koji uči decu veštinama koje škola najčešće preskače.</p>
-        <p> Roditelji nisu ispred zatvorenih vrata — oni su deo svega.</p>
+        <p>International School pruža učenicima prostor da istraže svoja interesovanja, izaberu predmete koji odgovaraju njihovim planovima i postepeno preuzmu veću odgovornost za sopstveno obrazovanje. Uz Cambridge program, ličnog mentora i stručnu podršku pri izboru fakulteta, razvijaju znanje, samostalnost i sigurnost u svoje odluke.</p>
+        <p>Međunarodna partnerstva škole dodatno im približavaju studije u inostranstvu kroz direktan kontakt sa predstavnicima univerziteta, posebne prezentacije studijskih programa i pristup stipendijama, pogodnostima pri upisu i finansijskoj podršci.</p>
       </div>
 
       <div className="btn-box">
