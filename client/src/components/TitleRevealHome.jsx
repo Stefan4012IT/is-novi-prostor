@@ -27,7 +27,7 @@ const TitleRevealHome = () => {
 
   return (
     <h3 ref={titleRef} className="title-reveal">
-      more room to grow.
+      <><span style={{ color: "#f2d4b0" }}>more room</span> to grow.</>
     </h3>
   );
 };

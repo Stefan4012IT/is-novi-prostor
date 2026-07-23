@@ -37,7 +37,7 @@ useEffect(() => {
   return (
     <section className="section-3-II" ref={sectionRef}>
         <h2 className="title">
-        Zakoračite u novi prostor za srednjoškolce International Schoola
+        Zakoračite u <span style={{ color: "#f2d4b0" }}>novi prostor</span> za srednjoškolce International Schoola
         </h2>
         <div className="section-img">
         <img src={pticice} alt="" />

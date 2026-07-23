@@ -51,7 +51,7 @@ const SectionHero = () => {
       </div>
 
       <div className="hero--title-right">
-        <h1>A SPACE FOR<br />THEIR NEXT CHAPTER</h1>
+        <h1>A SPACE FOR<br />THEIR <span style={{ color: "#f2d4b0" }}>NEXT CHAPTER</span></h1>
       </div>
 
       <div className="hero--second-title-line">
@@ -76,7 +76,7 @@ const SectionHero = () => {
 
         <div className="hero--paragraph-text">
           <h3>
-            A new address shaped around secondary school life
+            A <span style={{ color: "#f2d4b0" }}>new address</span> shaped around secondary school life
           </h3>
           <p>
             International School Secondary dobija svoj prostor na novoj adresi

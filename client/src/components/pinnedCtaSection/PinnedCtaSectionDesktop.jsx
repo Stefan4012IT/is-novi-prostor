@@ -96,7 +96,7 @@ function PinnedCtaSection() {
     <section className="section-7" ref={sectionRef}>
       <div className="heading-box">
         <h2 className="title" ref={titleRef}>
-          Znanje i podrška za siguran <br className="title-break-1920" />korak napred
+          <span style={{ color: "#f2d4b0" }}>Znanje i podrška</span> za siguran <br className="title-break-1920" />korak napred
         </h2>
       </div>
 

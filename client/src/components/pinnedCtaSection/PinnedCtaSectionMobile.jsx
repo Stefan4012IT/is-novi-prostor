@@ -62,7 +62,7 @@ function PinnedCtaSectionMobile() {
     <section className="section-7 mobile" ref={sectionRef}>
       <div className="heading-box">
         <h2 className="title" ref={titleRef}>
-          Znanje i podrška za siguran korak napred
+          <span style={{ color: "#f2d4b0" }}>Znanje i podrška</span> za siguran korak napred
         </h2>
       </div>
 

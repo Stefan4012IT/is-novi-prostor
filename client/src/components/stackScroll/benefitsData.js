@@ -1,7 +1,7 @@
 const benefitsData = [
     {
       title: "CAMBRIDGE STANDARDI",
-      subtitle: "Međunarodno priznate kvalifikacije.",
+      subtitle: "Međunarodno priznate kvalifikacije",
       text: "Cambridge program obuhvata IGCSE, AS i A Level kurikulume, a stečene kvalifikacije učenicima omogućavaju nastavak obrazovanja u Srbiji i inostranstvu.",
     },
     {
@@ -11,7 +11,7 @@ const benefitsData = [
     },
     {
       title: "TRI NIVOA PODRŠKE ZA USPEH",
-      subtitle: "Podrška kroz svaki korak.",
+      subtitle: "Podrška kroz svaki korak",
       text: "Učenici dobijaju svakodnevnu akademsku podršku, individualno mentorsko usmeravanje i stručnu pomoć tokom istraživanja i prijavljivanja na univerzitete.",
     },
     {

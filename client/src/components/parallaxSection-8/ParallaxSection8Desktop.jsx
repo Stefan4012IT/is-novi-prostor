@@ -62,7 +62,7 @@ function ParallaxSection_8() {
     <section className="section-8" ref={sectionRef}>
       <div className="heading-box">
         <h2 className="title" ref={titleRef}>
-          <>Cambridge obrazovanje<br />koje otvara vrata<br />sveta</>
+          <><span style={{ color: "#f2d4b0" }}>Cambridge obrazovanje</span><br />koje otvara vrata<br />sveta</>
         </h2>
       </div>
       <div className="text" ref={textRef}>
