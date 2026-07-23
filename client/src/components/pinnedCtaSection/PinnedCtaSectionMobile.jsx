@@ -22,14 +22,14 @@ function PinnedCtaSectionMobile() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(titleRef.current, {
-        x: -60,
+        xPercent: -25,
         opacity: 0,
-        duration: 1,
-        ease: "power2.out",
+        ease: "none",
         scrollTrigger: {
           trigger: titleRef.current,
-          start: "top 85%",
-          toggleActions: "play none none reverse",
+          start: "top 90%",
+          end: "top 55%",
+          scrub: true,
         },
       });
 
@@ -46,14 +46,14 @@ function PinnedCtaSectionMobile() {
       });
 
       gsap.from(ctaBoxRef.current, {
-        y: 40,
+        xPercent: -25,
         opacity: 0,
-        duration: 1,
-        ease: "power2.out",
+        ease: "none",
         scrollTrigger: {
           trigger: ctaBoxRef.current,
           start: "top 90%",
-          toggleActions: "play none none reverse",
+          end: "top 55%",
+          scrub: true,
         },
       });
     }, sectionRef);

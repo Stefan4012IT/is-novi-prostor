@@ -1,6 +1,12 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useLanguage } from "../i18n/LanguageContext";
 import { landingContent } from "../i18n/landingContent";
+import {
+  getLeadEventId,
+  leadTrackingOptions,
+  pushLeadEventIdToDataLayer,
+  pushLeadSubmitToDataLayer,
+} from "../services/leadEventId";
 
 const initialFormData = {
   name: "",
@@ -23,6 +29,10 @@ function FormSection({ eyebrow, title, text, className, id }) {
   const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
 
   const openedAt = useMemo(() => Date.now(), []);
+
+  useEffect(() => {
+    pushLeadEventIdToDataLayer(getLeadEventId(), leadTrackingOptions);
+  }, []);
 
   const sanitizeName = (value) => {
     return value
@@ -147,6 +157,7 @@ function FormSection({ eyebrow, title, text, className, id }) {
       setIsSubmitting(true);
 
       try {
+        const leadEventId = getLeadEventId();
         const payload = {
           name: formData.name.trim(),
           email: formData.email.trim(),
@@ -154,7 +165,10 @@ function FormSection({ eyebrow, title, text, className, id }) {
           "country-code": formData["country-code"].trim(),
           "area-code": formData["area-code"].trim(),
           "phone-number": formData["phone-number"].trim(),
-          institution: "sos",
+          institution: "is",
+          lead_event_id: leadEventId,
+          form_name: leadTrackingOptions.formName,
+          landing_slug: leadTrackingOptions.landingSlug,
         };
 
         const apiUrl =
@@ -180,6 +194,7 @@ function FormSection({ eyebrow, title, text, className, id }) {
         setErrors({});
         setHasSubmitted(false);
         setSubmitMessage("");
+        pushLeadSubmitToDataLayer(leadEventId, leadTrackingOptions);
         setIsSuccessModalOpen(true);
       } catch (error) {
         console.error(error);

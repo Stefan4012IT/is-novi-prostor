@@ -6,7 +6,7 @@ import isProstor3 from "../assets/hero/is_prostor_3.JPG";
 import isProstor4 from "../assets/hero/is_prostor_4.png";
 import ministarstvoProsvet from "../assets/ministarstvo-prosvet.png";
 import cambridgeBlack from "../assets/cambridge_black.png";
-import sos_novi_prostor_video from "../assets/hero/sos_novi_prostor_final_720p_30fr.mov";
+import heroVideo from "../assets/hero/international-school-new-space.mov";
 
 import RotatingWords from "./RotatingWords";
 import { useLanguage } from "../i18n/LanguageContext";
@@ -84,7 +84,7 @@ const SectionHero = () => {
             words={content.rotatingWords}
           />
           <video
-            src={sos_novi_prostor_video}
+            src={heroVideo}
             autoPlay
             loop
             muted

@@ -42,8 +42,6 @@ function ParallaxSection9Mobile() {
         },
       });
 
-
-
       gsap.from(textRef_2.current, {
         y: 100,
         opacity: 0,
@@ -86,11 +84,11 @@ function ParallaxSection9Mobile() {
             <p>{content.labels.address}</p>
             <span>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=45%20%C5%A0umatova%C4%8Dka%20Street%2C%20Belgrade"
+                href="https://www.google.com/maps/search/?api=1&query=23%20Terazije%2C%20Beograd"
                 target="_blank"
                 rel="noreferrer"
               >
-                45 Šumatovačka Street, Belgrade
+                23 Terazije, Beograd
               </a>
             </span>
           </div>

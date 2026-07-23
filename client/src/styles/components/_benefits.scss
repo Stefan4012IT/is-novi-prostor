@@ -3,7 +3,6 @@
     height: 100%;
     padding: 2rem;
     background-color: #354180;
-    background-image: var(--benefit-image);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,7 +30,8 @@
       }
 
       @media only screen and (max-width: 992px) {
-        width: 100%;
+        width: 50%;
+        height: auto;
         position: absolute;
         left: 0%;
         bottom: 0;
@@ -40,6 +40,7 @@
         height: 100%;
         @media only screen and (max-width: 992px) {
           width: 100%;
+          height: auto;
         }
       }
 
@@ -110,10 +111,11 @@
   .panel-0 .benefit {
     background-color: #e1a863;
     width: 100%;
+
     .big-num {
       @media only screen and (max-width: 992px) {
         width: 50%;
-        left: 2%;
+        left: 0;
         z-index: 5;
       }
     }

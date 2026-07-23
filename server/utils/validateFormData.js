@@ -17,6 +17,7 @@ const validateFormData = (data = {}) => {
   const phoneNumber = String(data["phone-number"] || "").trim();
   const website = String(data.website || "").trim();
   const institution = String(data.institution || "").trim().toLowerCase();
+  const leadEventId = String(data.lead_event_id || data.leadEventId || "").trim();
 
   if (website) {
     errors.website = "Spam detected.";
@@ -47,7 +48,7 @@ const validateFormData = (data = {}) => {
     errors["phone-number"] = "Broj telefona nije ispravan.";
   }
 
-  if (!["sos", "sg"].includes(institution)) {
+  if (!["sos", "sg", "is"].includes(institution)) {
     errors.institution = "Institution nije ispravan.";
   }
 
@@ -61,6 +62,9 @@ const validateFormData = (data = {}) => {
       "country-code": countryCode,
       "area-code": areaCode,
       "phone-number": phoneNumber,
+      lead_event_id: /^ld_\d{10,13}_[a-z0-9]{4,16}$/.test(leadEventId)
+        ? leadEventId
+        : "",
       institution,
     },
   };

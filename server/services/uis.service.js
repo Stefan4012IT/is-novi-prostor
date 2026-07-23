@@ -19,8 +19,9 @@ const sendToUIS = async (formData) => {
     "country-code": formData["country-code"],
     "area-code": formData["area-code"],
     "phone-number": formData["phone-number"],
+    lead_event_id: formData.lead_event_id,
     institution: formData.institution,
-    form_name: "novi prostor - sos",
+    form_name: formData.institution === "is" ? "novi prostor - is" : "novi prostor - sos",
   };
 
   try {

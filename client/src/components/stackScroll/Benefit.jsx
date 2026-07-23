@@ -4,7 +4,7 @@ function Benefit({ img, num, title, subtitle, text, className }) {
     return (
       <div
         className={`benefit ${className}`}
-        style={{ "--benefit-image": `url(${img})` }}
+        style={{ backgroundImage: `url(${img})` }}
       >
         <div className="big-num"><img src={num} alt="" /></div>
         <div className="benefit--content">
