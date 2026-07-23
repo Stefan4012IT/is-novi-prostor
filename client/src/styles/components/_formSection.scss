@@ -45,11 +45,14 @@
 
   &__form {
     display: flex;
+    flex: 1 1 0;
     flex-direction: column;
     gap: 20px;
     height: fit-content;
+    min-width: 0;
     @media only screen and (max-width: 992px) {
       width: 80%;
+      flex: none;
     }
   }
 
@@ -57,6 +60,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr .75fr;
     gap: 16px;
+    width: 86%;
+    align-self: center;
 
     @media only screen and (max-width: 992px) {
       display: flex;
@@ -105,8 +110,10 @@
 
   &__phone-row {
     display: grid;
-    grid-template-columns: .5fr .5fr 2fr;
+    grid-template-columns: minmax(0, 0.65fr) minmax(0, 0.65fr) minmax(0, 1.7fr);
     gap: 16px;
+    width: 86%;
+    align-self: center;
   }
 
   &__submit {
@@ -137,6 +144,7 @@
   @media (max-width: 767px) {
     &__phone-row {
       grid-template-columns: 1fr;
+      width: 100%;
     }
   }
 }

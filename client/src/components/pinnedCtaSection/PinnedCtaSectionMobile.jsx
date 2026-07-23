@@ -87,7 +87,7 @@ function PinnedCtaSectionMobile() {
       <div className="btn-box" ref={ctaBoxRef}>
         <div className="cta-text">
           <h4>
-            Pridružite nam se. Postanite deo Savremene zajednice koja raste.
+            Pridružite nam se. Postanite deo International Schoola.
           </h4>
 
           <Link

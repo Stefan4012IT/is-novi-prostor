@@ -6,28 +6,25 @@ function RotatingWords({ words = [], className = "" }) {
   const timelineRef = useRef(null);
 
   useEffect(() => {
-    const elements = wordsRef.current;
+    const elements = wordsRef.current.filter(Boolean);
+    const total = elements.length;
+
+    if (!total) {
+      return undefined;
+    }
 
     // Postavi početne pozicije – samo prvi je vidljiv (y: 0), ostali ispod (y: 100%)
     gsap.set(elements, { yPercent: 100, opacity: 0 });
     gsap.set(elements[0], { yPercent: 0, opacity: 1 });
 
-    let current = 0;
-    const total = elements.length;
+    // Jedan timeline upravlja celim krugom. Time se pri re-renderu ne
+    // ostavljaju stare rekurzivne animacije da pomeraju iste elemente.
+    const timeline = gsap.timeline({ repeat: -1 });
 
-    const loop = () => {
-      const currentEl = elements[current];
-      const nextIndex = (current + 1) % total;
-      const nextEl = elements[nextIndex];
+    elements.forEach((currentEl, index) => {
+      const nextEl = elements[(index + 1) % total];
 
-      const tl = gsap.timeline({
-        onComplete: () => {
-          current = nextIndex;
-          loop(); // rekurzivno pokrećemo sledeći krug
-        },
-      });
-
-      tl.to(currentEl, {
+      timeline.to(currentEl, {
         yPercent: -120,
         duration: 1,
         ease: "power2.inOut",
@@ -43,16 +40,16 @@ function RotatingWords({ words = [], className = "" }) {
           },
           "<" // startuje istovremeno sa prethodnim .to
         );
-    };
+    });
 
-    loop(); // inicijalni loop
+    timelineRef.current = timeline;
 
     return () => {
-        // 🧹 Očisti timeline da se ne duplira pri ponovnom ulasku u komponentu
-        if (timelineRef.current) {
-          timelineRef.current.kill();
-        }
-      };
+      timeline.kill();
+      if (timelineRef.current === timeline) {
+        timelineRef.current = null;
+      }
+    };
   }, [words]);
 
   return (

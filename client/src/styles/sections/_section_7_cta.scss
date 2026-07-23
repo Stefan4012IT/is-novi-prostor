@@ -70,8 +70,7 @@
         width: 50%;
         object-fit: cover;
         object-position: top;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
+        border-radius: 0;
 
         @media screen and (min-width: 2560px) {
             height: 800px;
@@ -89,7 +88,7 @@
             object-position: center;
             object-fit: cover;
             padding: 20px;
-            border-radius: 30px;
+            border-radius: 0;
         }
 
         @media screen and (max-width: 600px) {
@@ -152,8 +151,7 @@
             background-color: #e1a863;
             position: relative;
             z-index: 3;
-            border-bottom-left-radius: 50px;
-            border-top-left-radius: 50px;
+            border-radius: 0;
 
             @media screen and (min-width: 2560px) {
                 height: 350px;

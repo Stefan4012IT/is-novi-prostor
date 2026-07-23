@@ -108,7 +108,6 @@
         border-radius: 0;
         opacity: 1;
         transition: all 0.25s ease-in;
-        border-radius: 50px;
 
         @media screen and (max-width: 500px) {
         position: relative;
@@ -179,11 +178,11 @@
         padding: 20px 0 60px 0;
 
         img {
-          border-radius: 50px;
+          border-radius: 0;
           object-position: top;
 
           @media screen and (max-width: 992px) {
-            border-radius: 30px;
+            border-radius: 0;
           }
         }
       }

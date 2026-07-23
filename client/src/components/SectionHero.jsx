@@ -10,6 +10,8 @@ import sos_novi_prostor_video from "../assets/hero/sos_novi_prostor_final_720p_3
 
 import RotatingWords from "./RotatingWords";
 
+const ROTATING_WORDS = ["SPACE", "FORMATS", "VISION", "SUCCESS"];
+
 const SectionHero = () => {
   const [activeImage, setActiveImage] = useState(null);
 
@@ -57,12 +59,7 @@ const SectionHero = () => {
       <div className="hero--second-title-line">
         <div className="hero--title-left">
           <RotatingWords
-            words={[
-              "SPACE",
-              "FORMATS",
-              "VISION",
-              "SUCCESS",
-            ]}
+            words={ROTATING_WORDS}
           />
           <video
             src={sos_novi_prostor_video}
@@ -76,7 +73,8 @@ const SectionHero = () => {
 
         <div className="hero--paragraph-text">
           <h3>
-            A <span style={{ color: "#f2d4b0" }}>new address</span> shaped around secondary school life
+            <span style={{ color: "#f2d4b0" }}>A new address</span> shaped around{" "}
+            <span style={{ color: "#f2d4b0" }}>secondary school</span> life
           </h3>
           <p>
             International School Secondary dobija svoj prostor na novoj adresi
