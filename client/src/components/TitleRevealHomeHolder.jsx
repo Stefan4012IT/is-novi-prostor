@@ -7,7 +7,7 @@ const TitleRevealHomeHolder = () => {
             <h3>Big ideas now have</h3>
             <TitleRevealHome />
         </div>
-        <p className="text">Posvećeni nastavnici, inovativan program, sredina u kojoj se svako dete oseća važnim — sada dobija prostor koji to sve nosi sa lakoćom. Novi prostor. Novo odeljenje. Prava škola za vaše dete.</p>
+        <p className="text">Posvećeni nastavnici, Cambridge obrazovanje i podrška prilagođena svakom učeniku sada dobijaju novi okvir, prostor osmišljen za aktivno učenje, razmenu ideja i svakodnevni život srednjoškolaca.</p>
     </div>
   );
 };

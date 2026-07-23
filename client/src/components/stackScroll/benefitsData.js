@@ -10,12 +10,12 @@ const benefitsData = [
       text: "Svaki učenik bira ličnog mentora koji mu pruža podršku u učenju, postavljanju ciljeva, razvoju interesovanja i prevazilaženju izazova.",
     },
     {
-      title: "TRI NIVOA PODRŠKE ZA USPEH.",
+      title: "TRI NIVOA PODRŠKE ZA USPEH",
       subtitle: "Podrška kroz svaki korak.",
       text: "Učenici dobijaju svakodnevnu akademsku podršku, individualno mentorsko usmeravanje i stručnu pomoć tokom istraživanja i prijavljivanja na univerzitete.",
     },
     {
-      title: "OTVORENA VRATA FAKULTETA ŠIROM SVETA.",
+      title: "OTVORENA VRATA FAKULTETA ŠIROM SVETA",
       subtitle: "Od izbora do prijave",
       text: "Savetnik za upis pomaže učenicima da istraže univerzitete i programe, pripreme dokumentaciju, lične izjave i prijave, kao i da se pripreme za intervjue.",
     },
