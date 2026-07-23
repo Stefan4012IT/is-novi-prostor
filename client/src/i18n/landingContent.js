@@ -1,20 +1,20 @@
 export const landingContent = {
   sr: {
     hero: {
-      headlineStart: "PROSTOR ZA",
-      headlineMiddle: "NJIHOVO",
-      headlineAccent: "SLEDEĆE POGLAVLJE",
-      rotatingWords: ["PROSTOR", "FORMATI", "VIZIJA", "USPEH"],
-      eyebrowStart: "Nova adresa",
-      eyebrowMiddle: "oblikovana prema životu",
-      eyebrowAccent: "srednjoškolaca",
-      eyebrowEnd: "",
+      headlineStart: "A SPACE FOR",
+      headlineMiddle: "THEIR",
+      headlineAccent: "NEXT CHAPTER",
+      rotatingWords: ["SPACE", "FORMATS", "VISION", "SUCCESS"],
+      eyebrowStart: "A new address",
+      eyebrowMiddle: "shaped around",
+      eyebrowAccent: "secondary school",
+      eyebrowEnd: "life",
       text: "International School Secondary dobija svoj prostor na novoj adresi na Terazijama, u srcu Beograda, oblikovan prema ritmu i potrebama srednjoškolaca. Na 1.300 m², sa 17 savremeno opremljenih učionica i velikim amfiteatrom, nastava je osmišljena za aktivan rad, različite grupe i celovito iskustvo učenja. Mesto za učenje, stvaranje prijateljstava, nove ideje i sve što dolazi.",
     },
     form: {
       eyebrow: "Prijavite se odmah",
       title: "Izaberite obrazovanje koje otvara vrata uspešne budućnosti.",
-      text: "Budućnost vašeg deteta upravo je dobila više prostora za razvoj.",
+      text: "Your child’s future just got more room to grow.",
       placeholders: { name: "Ime i prezime", age: "Godine deteta" },
       errors: {
         spam: "Spam detected.",
@@ -32,9 +32,9 @@ export const landingContent = {
       success: "Vaša prijava je poslata",
     },
     titleHolder: {
-      prefix: "Velike ideje sada imaju",
-      highlight: "više prostora",
-      suffix: "za razvoj.",
+      prefix: "Big ideas now have",
+      highlight: "more room",
+      suffix: "to grow.",
       text: "Posvećeni nastavnici, Cambridge obrazovanje i podrška prilagođena svakom učeniku sada dobijaju novi okvir, prostor osmišljen za aktivno učenje, razmenu ideja i svakodnevni život srednjoškolaca.",
     },
     benefits: [
@@ -71,6 +71,15 @@ export const landingContent = {
       { title: "Velika scena za odvažne ideje i otvoren dijalog", text: "Veliki amfiteatar sa konferencijskim stolicama, površinama za pisanje i pokretnim Ultra HD interaktivnim monitorom namenjen je prezentacijama, debatama i gostujućim predavanjima. U atmosferi nalik TED Talk događajima, učenici će predstavljati svoje ideje, projekte i uspehe." },
       { title: "Školska zajednica u srcu Beograda", text: "Ulazni prostor, sa multifunkcionalnim postamentima za izlaganje učeničkih radova i zonama za predah, otvara pogled na Terazije i centar Beograda. Zastakljene kancelarije dodatno brišu granice između učenika i zaposlenih, stvarajući otvorenu zajednicu usmerenu na svakodnevni rad, razmenu i napredak." },
     ],
+    stats: {
+      title: "International School u brojkama",
+      items: [
+        { value: "26", label: "Najboljih Cambridge učenika na svetu" },
+        { value: "30", label: "Cambridge predmeta" },
+        { value: "84", suffix: "%", label: "Zadovoljnih učenika" },
+        { value: "82", suffix: "%", label: "Prolaznost na Cambridge ispitima" },
+      ],
+    },
     sectionSeven: {
       titleAccent: "Znanje i podrška",
       titleEnd: "za siguran korak napred",
@@ -103,7 +112,7 @@ export const landingContent = {
       ],
     },
     sectionNine: {
-      title: "Budućnost vašeg deteta upravo je dobila više prostora.",
+      title: "Your child's future just got bigger.",
       labels: { address: "Adresa škole:", phone: "Telefon:", website: "Sajt škole:", info: "Za informacije:", admission: "Sektor za upis:" },
       closing: "Novi prostor nije slučajnost. To je odgovor na poverenje stotina porodica koje su prepoznale da obrazovanje može da bude drugačije. Ako ste razmišljali — ovo je pravi trenutak.",
     },
@@ -157,6 +166,15 @@ export const landingContent = {
       { title: "A big stage for bold ideas and open dialogue", text: "A large amphitheatre with conference seating, writing surfaces and a movable Ultra HD interactive monitor is designed for presentations, debates and guest lectures. In a TED Talk-inspired atmosphere, students will present their ideas, projects and achievements." },
       { title: "A school community in the heart of Belgrade", text: "The entrance area, with multifunctional plinths for displaying student work and spaces to pause, looks out over Terazije and central Belgrade. Glass-fronted offices further remove barriers between students and staff, creating an open community focused on everyday work, exchange and progress." },
     ],
+    stats: {
+      title: "International School in numbers",
+      items: [
+        { value: "26", label: "Best Cambridge students in the world" },
+        { value: "30", label: "Cambridge subjects" },
+        { value: "84", suffix: "%", label: "Satisfied students" },
+        { value: "82", suffix: "%", label: "Cambridge Exams passing rate" },
+      ],
+    },
     sectionSeven: {
       titleAccent: "Knowledge and support",
       titleEnd: "for a confident step forward",

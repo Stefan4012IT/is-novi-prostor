@@ -24,6 +24,8 @@ import FormSection from '../components/FormSection';
 import TitleRevealHomeHolder from '../components/TitleRevealHomeHolder';
 import InfiniteSOSScrollWrapper from '../components/infiniteScrollSOS/InfiniteSOSScrollWrapper';
 import TestimonialsSection from '../components/testimonials/TestimonialsSection';
+import StatsSection from '../components/StatsSection';
+import PartnersSection from '../components/PartnersSection';
 import { useLanguage } from '../i18n/LanguageContext';
 import { landingContent } from '../i18n/landingContent';
 
@@ -50,7 +52,9 @@ function Home() {
         
         <Section_II_sprat />
         <InfiniteSOSScrollWrapper />
+        <StatsSection />
         <FormSection {...content.form} className="form-section-2"/>
+        <PartnersSection />
         
         <PinnedCtaSectionWrapper />
         <ParallaxSection8Wrapper />

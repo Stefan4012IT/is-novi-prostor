@@ -2,15 +2,15 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-import img_1 from "../../assets/floating/floating_sos_1.png";
-import img_2 from "../../assets/floating/floating_sos_2.png";
-import img_3 from "../../assets/floating/floating_sos_3.png";
-import img_4 from "../../assets/floating/floating_sos_4.png";
-import img_5 from "../../assets/floating/floating_sos_5.png";
-import img_6 from "../../assets/floating/floating_sos_6.png";
-import img_7 from "../../assets/floating/floating_sos_7.png";
-import img_8 from "../../assets/floating/floating_sos_8.png";
-import img_9 from "../../assets/floating/floating_sos_9.png";
+import img_1 from "../../assets/floating/international-school/international-school-floating-01.png";
+import img_2 from "../../assets/floating/international-school/international-school-floating-02.png";
+import img_3 from "../../assets/floating/international-school/international-school-floating-03.png";
+import img_4 from "../../assets/floating/international-school/international-school-floating-04.png";
+import img_5 from "../../assets/floating/international-school/international-school-floating-05.png";
+import img_6 from "../../assets/floating/international-school/international-school-floating-06.png";
+import img_7 from "../../assets/floating/international-school/international-school-floating-07.png";
+import img_8 from "../../assets/floating/international-school/international-school-floating-08.png";
+import img_9 from "../../assets/floating/international-school/international-school-floating-09.png";
 
 gsap.registerPlugin(ScrollTrigger);
 

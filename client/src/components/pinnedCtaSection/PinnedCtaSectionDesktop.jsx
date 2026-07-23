@@ -100,7 +100,12 @@ function PinnedCtaSection() {
     <section className="section-7" ref={sectionRef}>
       <div className="heading-box">
         <h2 className="title" ref={titleRef}>
-          <span style={{ color: "#f2d4b0" }}>{content.titleAccent}</span> {content.titleEnd}
+          <span style={{ color: "#f2d4b0" }}>{content.titleAccent}</span>{" "}
+          {language === "sr" ? (
+            <>{content.titleBeforeBreak}<br />{content.titleAfterBreak}</>
+          ) : (
+            content.titleEnd
+          )}
         </h2>
       </div>
 
