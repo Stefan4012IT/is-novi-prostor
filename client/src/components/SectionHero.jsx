@@ -9,11 +9,13 @@ import cambridgeBlack from "../assets/cambridge_black.png";
 import sos_novi_prostor_video from "../assets/hero/sos_novi_prostor_final_720p_30fr.mov";
 
 import RotatingWords from "./RotatingWords";
-
-const ROTATING_WORDS = ["SPACE", "FORMATS", "VISION", "SUCCESS"];
+import { useLanguage } from "../i18n/LanguageContext";
+import { landingContent } from "../i18n/landingContent";
 
 const SectionHero = () => {
   const [activeImage, setActiveImage] = useState(null);
+  const { language, setLanguage } = useLanguage();
+  const content = landingContent[language].hero;
 
   const heroImages = [
     { src: isProstor1, alt: "International School prostor 1" },
@@ -52,14 +54,34 @@ const SectionHero = () => {
         </div>
       </div>
 
+      <div className="hero__language-switcher" aria-label="Izbor jezika">
+        <button
+          type="button"
+          className={language === "sr" ? "is-active" : ""}
+          onClick={() => setLanguage("sr")}
+          aria-pressed={language === "sr"}
+        >
+          SR
+        </button>
+        <span className="divider">/</span>
+        <button
+          type="button"
+          className={language === "en" ? "is-active" : ""}
+          onClick={() => setLanguage("en")}
+          aria-pressed={language === "en"}
+        >
+          EN
+        </button>
+      </div>
+
       <div className="hero--title-right">
-        <h1>A SPACE FOR<br />THEIR <span style={{ color: "#f2d4b0" }}>NEXT CHAPTER</span></h1>
+        <h1>{content.headlineStart}<br />{content.headlineMiddle} <span style={{ color: "#f2d4b0" }}>{content.headlineAccent}</span></h1>
       </div>
 
       <div className="hero--second-title-line">
         <div className="hero--title-left">
           <RotatingWords
-            words={ROTATING_WORDS}
+            words={content.rotatingWords}
           />
           <video
             src={sos_novi_prostor_video}
@@ -73,16 +95,11 @@ const SectionHero = () => {
 
         <div className="hero--paragraph-text">
           <h3>
-            <span style={{ color: "#f2d4b0" }}>A new address</span> shaped around{" "}
-            <span style={{ color: "#f2d4b0" }}>secondary school</span> life
+            <span style={{ color: "#f2d4b0" }}>{content.eyebrowStart}</span> {content.eyebrowMiddle}{" "}
+            <span style={{ color: "#f2d4b0" }}>{content.eyebrowAccent}</span> {content.eyebrowEnd}
           </h3>
           <p>
-            International School Secondary dobija svoj prostor na novoj adresi
-            na Terazijama, u srcu Beograda, oblikovan prema ritmu i potrebama
-            srednjoškolaca. Na 1.300 m², sa 17 savremeno opremljenih učionica
-            i velikim amfiteatrom, nastava je osmišljena za aktivan rad,
-            različite grupe i celovito iskustvo učenja. Mesto za učenje,
-            stvaranje prijateljstava, nove ideje i sve što dolazi.
+            {content.text}
           </p>
         </div>
       </div>

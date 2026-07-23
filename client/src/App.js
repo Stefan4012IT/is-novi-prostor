@@ -3,6 +3,7 @@ import GlobalScrollTriggerReaper from "./components/common/GlobalScrollTriggerRe
 import Home from "./pages/Home";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import { LanguageProvider } from "./i18n/LanguageContext";
 
 function App() {
   useEffect(() => {
@@ -14,10 +15,10 @@ function App() {
   }, []);
 
   return (
-    <>
+    <LanguageProvider>
       <Home />
       {/* <GlobalScrollTriggerReaper debug={false} /> */ }
-    </>
+    </LanguageProvider>
 
       // <Home />
   );

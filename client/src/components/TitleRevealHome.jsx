@@ -1,11 +1,15 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useLanguage } from "../i18n/LanguageContext";
+import { landingContent } from "../i18n/landingContent";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const TitleRevealHome = () => {
   const titleRef = useRef();
+  const { language } = useLanguage();
+  const content = landingContent[language].titleHolder;
 
   useEffect(() => {
     gsap.fromTo(
@@ -27,7 +31,7 @@ const TitleRevealHome = () => {
 
   return (
     <h3 ref={titleRef} className="title-reveal">
-      <><span style={{ color: "#f2d4b0" }}>more room</span> to grow.</>
+      <><span style={{ color: "#f2d4b0" }}>{content.highlight}</span> {content.suffix}</>
     </h3>
   );
 };

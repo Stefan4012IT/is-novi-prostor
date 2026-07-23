@@ -6,12 +6,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
-import testimonialsData from "./testimonialsData";
+import { getTestimonialsData } from "./testimonialsData";
+import { useLanguage } from "../../i18n/LanguageContext";
+import { landingContent } from "../../i18n/landingContent";
 
 import img1 from "../../assets/ptice2.svg"
 
 
 export default function TestimonialsSection() {
+  const { language } = useLanguage();
+  const content = landingContent[language].testimonials;
+  const testimonialsData = getTestimonialsData(language);
   const swiperRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -23,14 +28,14 @@ export default function TestimonialsSection() {
       <div className="testimonials-section__inner">
         <img src={img1} alt="International School ilustracija" className="ptice" />
         <div className="testimonials-section__top">
-          <h3 className="testimonials-section__heading">Utisci iz International Schoola</h3>
+          <h3 className="testimonials-section__heading">{content.heading}</h3>
 
           <div className="testimonials-section__nav">
             <button
               type="button"
               className="testimonials-section__arrow testimonials-section__arrow--prev"
               onClick={() => swiperRef.current?.slidePrev()}
-              aria-label="Previous testimonial"
+              aria-label={content.previous}
             >
               &#8249;
             </button>
@@ -39,7 +44,7 @@ export default function TestimonialsSection() {
               type="button"
               className="testimonials-section__arrow testimonials-section__arrow--next"
               onClick={() => swiperRef.current?.slideNext()}
-              aria-label="Next testimonial"
+              aria-label={content.next}
             >
               &#8250;
             </button>
@@ -104,7 +109,7 @@ export default function TestimonialsSection() {
                   activeIndex === index ? "is-active" : ""
                 }`}
                 onClick={() => swiperRef.current?.slideToLoop(index)}
-                aria-label={`Go to testimonial ${index + 1}`}
+                aria-label={`${content.goTo} ${index + 1}`}
               >
                 <img src={item.image} alt={item.name} />
               </button>

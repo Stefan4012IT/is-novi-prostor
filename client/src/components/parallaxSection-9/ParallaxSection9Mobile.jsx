@@ -1,11 +1,15 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import img_1 from "../../assets/mapa_sos.jpg";
+import img_1 from "../../assets/international-school-map.jpg";
+import { useLanguage } from "../../i18n/LanguageContext";
+import { landingContent } from "../../i18n/landingContent";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function ParallaxSection9Mobile() {
+  const { language } = useLanguage();
+  const content = landingContent[language].sectionNine;
 
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
@@ -74,25 +78,41 @@ function ParallaxSection9Mobile() {
 
   return (
     <section className="section-9 mobile" ref={sectionRef}>
-      <h2 className="title" ref={titleRef}>Your future just got bigger.</h2>
+      <h2 className="title" ref={titleRef}>{content.title}</h2>
 
       <div className="text_1" ref={textRef_1}>
         <div className="contact-box">
           <div>
-            <p>Adresa škole:</p>
-            <span>Bulevar heroja sa Košara 17,</span>
-            <span>Novi Beograd</span>
-            <span>(0)11/40-11-222</span> 
+            <p>{content.labels.address}</p>
+            <span>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=45%20%C5%A0umatova%C4%8Dka%20Street%2C%20Belgrade"
+                target="_blank"
+                rel="noreferrer"
+              >
+                45 Šumatovačka Street, Belgrade
+              </a>
+            </span>
           </div>
 
           <div>
-            <p>Sajt škole:</p>
-            <span><a href="www.savremena-osnovna.edu.rs">www.savremena-osnovna.edu.rs</a></span>
+            <p>{content.labels.phone}</p>
+            <span><a href="tel:+381114011220">+381 (0)11 4011 220</a></span>
           </div>
 
           <div>
-            <p>Sektor za upis:</p>
-            <span><a href="mailto:office@savremena-osnovna.edu.rs">office@savremena-osnovna.edu.rs</a></span>
+            <p>{content.labels.website}</p>
+            <span><a href="https://www.international-school.edu.rs/">www.international-school.edu.rs</a></span>
+          </div>
+
+          <div>
+            <p>{content.labels.info}</p>
+            <span><a href="mailto:info@iss.edu.rs">info@iss.edu.rs</a></span>
+          </div>
+
+          <div>
+            <p>{content.labels.admission}</p>
+            <span><a href="mailto:admission@iss.edu.rs">admission@iss.edu.rs</a></span>
           </div>
         </div>
       </div>
@@ -100,7 +120,7 @@ function ParallaxSection9Mobile() {
       <div className="text_2">
         <div className="line"></div>
         <p ref={textRef_2}>
-        Savremena ne raste slučajno – raste planski, sa ciljem da svakom učeniku pruži prostor u kojem može da uči, razmišlja, pita, stvara: četiri sprata, sedam novih zona i bezbroj novih mogućnosti.
+        {content.closing}
         </p>
       </div>
 

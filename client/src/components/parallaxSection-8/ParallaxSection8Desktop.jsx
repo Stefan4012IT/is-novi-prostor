@@ -1,11 +1,15 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import img_3 from "../../assets/savremena_novi_prostor-1.png";
+import img_3 from "../../assets/cambridge-international-school.jpg";
+import { useLanguage } from "../../i18n/LanguageContext";
+import { landingContent } from "../../i18n/landingContent";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function ParallaxSection_8() {
+  const { language } = useLanguage();
+  const content = landingContent[language].sectionEight;
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
   const textRef = useRef(null);
@@ -62,11 +66,15 @@ function ParallaxSection_8() {
     <section className="section-8" ref={sectionRef}>
       <div className="heading-box">
         <h2 className="title" ref={titleRef}>
-          <><span style={{ color: "#f2d4b0" }}>Cambridge obrazovanje</span><br />koje otvara vrata<br />sveta</>
+          {language === "en" ? (
+            <><span style={{ color: "#f2d4b0" }}>{content.titleAccent}</span> {content.titleLineTwo} {content.titleLineThree}</>
+          ) : (
+            <><span style={{ color: "#f2d4b0" }}>{content.titleAccent}</span><br />{content.titleLineTwo}<br />{content.titleLineThree}</>
+          )}
         </h2>
       </div>
       <div className="text" ref={textRef}>
-        <p>Kao akreditovana Cambridge International School, International School pruža učenicima obrazovanje zasnovano na međunarodno priznatim IGCSE, AS i A Level programima. Nastava na engleskom jeziku, pažljivo odabran izbor predmeta i Cambridge kvalifikacije pružaju snažnu osnovu za nastavak školovanja i otvaraju vrata fakulteta u Srbiji i širom sveta.</p>
+        <p>{content.text}</p>
       </div>
       <img src={img_3} alt="Get in touch" className="img_prizemlje" ref={imgRef} />
     </section>

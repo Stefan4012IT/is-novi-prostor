@@ -1,13 +1,18 @@
 import TitleRevealHome from "./TitleRevealHome";
+import { useLanguage } from "../i18n/LanguageContext";
+import { landingContent } from "../i18n/landingContent";
 
 const TitleRevealHomeHolder = () => {
+  const { language } = useLanguage();
+  const content = landingContent[language].titleHolder;
+
   return (
     <div className="title-holder">
         <div className="title">
-            <h3>Big ideas now have</h3>
+            <h3>{content.prefix}</h3>
             <TitleRevealHome />
         </div>
-        <p className="text">Posvećeni nastavnici, Cambridge obrazovanje i podrška prilagođena svakom učeniku sada dobijaju novi okvir, prostor osmišljen za aktivno učenje, razmenu ideja i svakodnevni život srednjoškolaca.</p>
+        <p className="text">{content.text}</p>
     </div>
   );
 };

@@ -2,13 +2,16 @@ import React from "react";
 import useIsMobile from "../../components/infiniteScroll/common/useIsMobile";
 // import StackScroll from "./StackScroll";
 import Benefit from "./Benefit";
-import benefitsData from "./benefitsData";
+import { getBenefitsData } from "./benefitsData";
 import benefitsImages from "./benefitsImages";
 import StackScrollMobile from "./StackScrollMobile";
 import StackScrollDesktop from "./StackScrollDesktop";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 const StackScrollWrapper = () => {
   const isMobile = useIsMobile();
+  const { language } = useLanguage();
+  const benefitsData = getBenefitsData(language);
 
   // Merge images with content
   const mergedData = benefitsData.map((item, index) => ({

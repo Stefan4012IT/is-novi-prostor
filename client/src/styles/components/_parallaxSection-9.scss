@@ -1,8 +1,8 @@
 .section-9 {
     position: relative;
-    height: 700px;
+    height: 850px;
     width: 100%;
-    background-color: #354180;
+    background-color: #e1a863;
 
     @media screen and (max-width: 992px) {
         display: flex;
@@ -26,7 +26,8 @@
 
     .text_1 {
         position: absolute;
-        top: 50%;
+        top: auto;
+        bottom: 40px;
         width: 25%;
         left: 3vw;
         color: #FFF;
@@ -36,6 +37,8 @@
             position: relative;
             padding: 0 20px;
             left: 0;
+            top: auto;
+            bottom: auto;
             order: 3;
             padding-bottom: 20px;
         }
@@ -56,7 +59,7 @@
                 font-size: 1.4em;
                 text-align: left;
 
-                @media screen and (min-width: 2560px) {
+    @media screen and (min-width: 2560px) {
                     font-size: 2em;
                 }
               }

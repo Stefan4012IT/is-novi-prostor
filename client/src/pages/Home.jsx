@@ -24,28 +24,33 @@ import FormSection from '../components/FormSection';
 import TitleRevealHomeHolder from '../components/TitleRevealHomeHolder';
 import InfiniteSOSScrollWrapper from '../components/infiniteScrollSOS/InfiniteSOSScrollWrapper';
 import TestimonialsSection from '../components/testimonials/TestimonialsSection';
+import { useLanguage } from '../i18n/LanguageContext';
+import { landingContent } from '../i18n/landingContent';
 
 
 
 function Home() {
+  const { language } = useLanguage();
+  const content = landingContent[language];
+
   useEffect(() => {
     setTimeout(() => {
       console.log("🔥 REFRESHING SCROLLTRIGGER");
       ScrollTrigger.refresh();
     }, 1000);
-  }, []);
+  }, [language]);
     return (
       <main className="home">
         <Preloader />
         <SectionHero />
-        <FormSection eyebrow="Prijavite se odmah" title="Izaberite obrazovanje koje otvara vrata uspešne budućnosti." text="Your child’s future just got more room to grow." />
+        <FormSection {...content.form} />
         
         <TitleRevealHomeHolder />
         <StackScrollWrapper />
         
         <Section_II_sprat />
         <InfiniteSOSScrollWrapper />
-        <FormSection eyebrow="Prijavite se odmah" title="Izaberite obrazovanje koje otvara vrata uspešne budućnosti." text="Your child’s future just got more room to grow." className="form-section-2"/>
+        <FormSection {...content.form} className="form-section-2"/>
         
         <PinnedCtaSectionWrapper />
         <ParallaxSection8Wrapper />
@@ -53,7 +58,7 @@ function Home() {
         <ParallaxSection9Wrapper />
 
         <FloatingWrapper />
-        <FormSection eyebrow="Prijavite se odmah" title="Izaberite obrazovanje koje otvara vrata uspešne budućnosti." text="Your child’s future just got more room to grow." className="form-section-3" id="prijava-2"/>
+        <FormSection {...content.form} className="form-section-3" id="prijava-2"/>
         <Footer />
       </main>
     );

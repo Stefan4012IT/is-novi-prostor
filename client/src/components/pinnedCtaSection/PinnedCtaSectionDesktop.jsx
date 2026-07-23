@@ -1,11 +1,15 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import ctaImg from "../../assets/img_cta_960x500.jpg";
+import ctaImg from "../../assets/international-school-students-960x500.jpg";
+import { useLanguage } from "../../i18n/LanguageContext";
+import { landingContent } from "../../i18n/landingContent";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function PinnedCtaSection() {
+  const { language } = useLanguage();
+  const content = landingContent[language].sectionSeven;
   const sectionRef = useRef(null);
   const boxRef = useRef(null);
   const titleRef = useRef(null);
@@ -96,7 +100,7 @@ function PinnedCtaSection() {
     <section className="section-7" ref={sectionRef}>
       <div className="heading-box">
         <h2 className="title" ref={titleRef}>
-          <span style={{ color: "#f2d4b0" }}>Znanje i podrška</span> za siguran <br className="title-break-1920" />korak napred
+          <span style={{ color: "#f2d4b0" }}>{content.titleAccent}</span> {content.titleEnd}
         </h2>
       </div>
 
@@ -104,15 +108,14 @@ function PinnedCtaSection() {
       <img src={ctaImg} alt="Kids" className="kids-img" ref={imgRef} />
 
       <div className="text" ref={textRef}>
-        <p>International School pruža učenicima prostor da istraže svoja interesovanja, izaberu predmete koji odgovaraju njihovim planovima i postepeno preuzmu veću odgovornost za sopstveno obrazovanje. Uz Cambridge program, ličnog mentora i stručnu podršku pri izboru fakulteta, razvijaju znanje, samostalnost i sigurnost u svoje odluke.</p>
-        <p>Međunarodna partnerstva škole dodatno im približavaju studije u inostranstvu kroz direktan kontakt sa predstavnicima univerziteta, posebne prezentacije studijskih programa i pristup stipendijama, pogodnostima pri upisu i finansijskoj podršci.</p>
+        {content.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
       </div>
 
       <div className="btn-box">
         <div className="floated-box" ref={boxRef}></div>
         <div className="cta-text">
-          <h4>Pridružite nam se. Postanite deo International Schoola.</h4>
-          <a href="https://www.savremena-gimnazija.edu.rs/prijava/">{`Upis za generaciju ${dynamicYears} je toku →`}</a>
+          <h4>{content.cta}</h4>
+          <a href="https://www.international-school.edu.rs/registration/">{content.enrollment.replace("{years}", dynamicYears)}</a>
         </div>
       </div>
     </section>

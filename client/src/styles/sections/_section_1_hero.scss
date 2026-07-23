@@ -141,6 +141,45 @@
 
     }
 
+    &__language-switcher {
+        position: absolute;
+        top: 1.5vh;
+        right: 3vw;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        gap: 0.3em;
+        color: #354180;
+        font-size: 1.6em;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+
+        button {
+            padding: 0;
+            border: 0;
+            background: transparent;
+            color: inherit;
+            font: inherit;
+            letter-spacing: inherit;
+            cursor: pointer;
+        }
+
+        button.is-active {
+            color: #f2d4b0;
+        }
+
+        .divider {
+            color: #354180;
+            opacity: 0.6;
+        }
+
+        @media only screen and (max-width: 992px) {
+            top: 18px;
+            right: 20px;
+            font-size: 1.3em;
+        }
+    }
+
     &--title-right {
         position: relative;
         right: 0px;

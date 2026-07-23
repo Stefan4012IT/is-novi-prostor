@@ -1,4 +1,6 @@
 import React, { useMemo, useState } from "react";
+import { useLanguage } from "../i18n/LanguageContext";
+import { landingContent } from "../i18n/landingContent";
 
 const initialFormData = {
   name: "",
@@ -11,6 +13,8 @@ const initialFormData = {
 };
 
 function FormSection({ eyebrow, title, text, className, id }) {
+  const { language } = useLanguage();
+  const formCopy = landingContent[language].form;
   const [formData, setFormData] = useState(initialFormData);
   const [errors, setErrors] = useState({});
   const [submitMessage, setSubmitMessage] = useState("");
@@ -62,32 +66,32 @@ function FormSection({ eyebrow, title, text, className, id }) {
     const website = String(data.website).trim();
 
     if (website) {
-        newErrors.website = "Spam detected.";
+        newErrors.website = formCopy.errors.spam;
     }
 
     if (!/^[A-Za-zÀ-žĆČŠĐŽćčšđž\s'-]{2,60}$/.test(name)) {
-        newErrors.name = "Unesite ispravno ime i prezime.";
+        newErrors.name = formCopy.errors.name;
     }
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        newErrors.email = "Unesite ispravnu email adresu.";
+        newErrors.email = formCopy.errors.email;
     }
 
     const ageNum = Number(childsAge);
     if (!Number.isInteger(ageNum) || ageNum < 3 || ageNum > 19) {
-        newErrors.childs_age = "Unesite uzrast djeteta između 3 i 19.";
+        newErrors.childs_age = formCopy.errors.age;
     }
 
     if (!/^\+\d{1,4}$/.test(countryCode)) {
-        newErrors["country-code"] = "Unesite ispravan pozivni broj države.";
+        newErrors["country-code"] = formCopy.errors.countryCode;
     }
 
     if (!/^\d{1,4}$/.test(areaCode)) {
-        newErrors["area-code"] = "Unesite ispravan pozivni broj mreže.";
+        newErrors["area-code"] = formCopy.errors.areaCode;
     }
 
     if (!/^\d{5,12}$/.test(phoneNumber)) {
-        newErrors["phone-number"] = "Unesite ispravan broj telefona.";
+        newErrors["phone-number"] = formCopy.errors.phone;
     }
 
     return newErrors;
@@ -136,7 +140,7 @@ function FormSection({ eyebrow, title, text, className, id }) {
 
       const timeSpent = Date.now() - openedAt;
       if (timeSpent < 3000) {
-        setSubmitMessage("Molimo sačekajte trenutak i pokušajte ponovo.");
+        setSubmitMessage(formCopy.errors.wait);
         return;
       }
 
@@ -179,7 +183,7 @@ function FormSection({ eyebrow, title, text, className, id }) {
         setIsSuccessModalOpen(true);
       } catch (error) {
         console.error(error);
-        setSubmitMessage("Došlo je do greške prilikom slanja. Pokušajte ponovo.");
+        setSubmitMessage(formCopy.errors.send);
       } finally {
         setIsSubmitting(false);
       }
@@ -222,7 +226,7 @@ function FormSection({ eyebrow, title, text, className, id }) {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Ime i prezime"
+                placeholder={formCopy.placeholders.name}
                 />
                 {errors.name && <p className="form-section__error">{errors.name}</p>}
             </div>
@@ -245,7 +249,7 @@ function FormSection({ eyebrow, title, text, className, id }) {
                 name="childs_age"
                 value={formData.childs_age}
                 onChange={handleChange}
-                placeholder="Godine deteta"
+                placeholder={formCopy.placeholders.age}
                 />
                 {errors.childs_age && (
                 <p className="form-section__error">{errors.childs_age}</p>
@@ -303,7 +307,7 @@ function FormSection({ eyebrow, title, text, className, id }) {
             className="form-section__submit"
             disabled={isSubmitting}
           >
-            {isSubmitting ? "Slanje..." : "Pošalji prijavu"}
+            {isSubmitting ? formCopy.submitting : formCopy.submit}
           </button>
 
           {submitMessage && (
@@ -321,7 +325,7 @@ function FormSection({ eyebrow, title, text, className, id }) {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="form-section__modal-check">✓</div>
-            <h4 className="form-section__modal-text">Vaša prijava je poslata</h4>
+            <h4 className="form-section__modal-text">{formCopy.success}</h4>
             <button
               type="button"
               className="form-section__modal-button"
