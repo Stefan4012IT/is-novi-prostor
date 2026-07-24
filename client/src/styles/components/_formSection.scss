@@ -232,7 +232,7 @@
 .image-modal {
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: 2147483647;
   background: rgba(8, 12, 20, 0.78);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);

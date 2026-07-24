@@ -6,6 +6,7 @@ import { LanguageProvider } from "./i18n/LanguageContext";
 import {
   scheduleScrollTriggerRefresh,
   scheduleScrollTriggerUpdate,
+  watchScrollTriggerPosition,
 } from "./utils/scrollTriggerRefresh";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     let isMounted = true;
     const refresh = () => scheduleScrollTriggerRefresh();
     const update = () => scheduleScrollTriggerUpdate();
+    const stopScrollWatcher = watchScrollTriggerPosition();
 
     window.addEventListener("load", refresh);
     window.addEventListener("scroll", update, { passive: true });
@@ -28,6 +30,7 @@ function App() {
       window.removeEventListener("load", refresh);
       window.removeEventListener("scroll", update);
       document.removeEventListener("scroll", update);
+      stopScrollWatcher();
     };
   }, []);
 

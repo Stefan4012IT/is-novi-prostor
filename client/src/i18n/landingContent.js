@@ -66,25 +66,25 @@ export const landingContent = {
       subtitle: "Šta vas očekuje u novom prostoru?",
     },
     infinite: [
-      { title: "Učionice prilagođene svakom formatu nastave", text: "Novi prostor obuhvata 17 učionica za rad u većim i manjim grupama, u skladu sa izborom predmeta. Dizajnerski nameštaj, interaktivni displeji, ambijentalni mikrofoni i kamere za prenos uživo omogućavaju savremeno iskustvo učenja, u učionici i van nje." },
-      { title: "Nova dinamika rada u učionici", text: "Umesto klasičnih katedri, nastavnicima su na raspolaganju govornice koje podstiču kretanje kroz učionicu i neposredan rad sa učenicima. Prostor je osmišljen tako da podrži interaktivnu nastavu, aktivno učešće i usvajanje znanja kroz iskustvo." },
+      { title: "Učionice prilagođene svakom formatu nastave za maksimalne rezultate", text: "Novi prostor obuhvata 17 učionica za rad u većim i manjim grupama, u skladu sa izborom predmeta. Dizajnerski nameštaj, interaktivni displeji, ambijentalni mikrofoni i kamere za prenos uživo omogućavaju savremeno iskustvo učenja, u učionici i van nje." },
+      { title: "Interaktivna dinamika rada za aktivnije učenje", text: "Umesto klasičnih katedri, nastavnicima su na raspolaganju govornice koje podstiču kretanje kroz učionicu i neposredan rad sa učenicima. Prostor je osmišljen tako da podrži interaktivnu nastavu, aktivno učešće i usvajanje znanja kroz iskustvo." },
       { title: "Velika scena za odvažne ideje i otvoren dijalog", text: "Veliki amfiteatar sa konferencijskim stolicama, površinama za pisanje i pokretnim Ultra HD interaktivnim monitorom namenjen je prezentacijama, debatama i gostujućim predavanjima. U atmosferi nalik TED Talk događajima, učenici će predstavljati svoje ideje, projekte i uspehe." },
-      { title: "Školska zajednica u srcu Beograda", text: "Ulazni prostor, sa multifunkcionalnim postamentima za izlaganje učeničkih radova i zonama za predah, otvara pogled na Terazije i centar Beograda. Zastakljene kancelarije dodatno brišu granice između učenika i zaposlenih, stvarajući otvorenu zajednicu usmerenu na svakodnevni rad, razmenu i napredak." },
+      { title: "Cambridge školska zajednica u srcu Beograda", text: "Ulazni prostor, sa multifunkcionalnim postamentima za izlaganje učeničkih radova i zonama za predah, otvara pogled na Terazije i centar Beograda. Zastakljene kancelarije dodatno brišu granice između učenika i zaposlenih, stvarajući otvorenu zajednicu usmerenu na svakodnevni rad, razmenu i napredak." },
     ],
     stats: {
       title: "International School u brojkama",
       items: [
-        { value: "26", label: "Najboljih Cambridge učenika na svetu" },
-        { value: "30", label: "Cambridge predmeta" },
-        { value: "84", suffix: "%", label: "Zadovoljnih učenika" },
-        { value: "82", suffix: "%", label: "Prolaznost na Cambridge ispitima" },
+        { value: "94", suffix: "%", label: "Prolaznost na Cambridge ispitima" },
+        { value: "97", suffix: "%", label: "Zadovoljnih učenika i roditelja" },
+        { value: "150+", label: "Učeničkih medalja, nagrada i priznanja" },
+        { value: "30", label: "Najboljih Cambridge učenika na svetu" },
       ],
     },
     sectionSeven: {
       titleAccent: "Znanje i podrška",
-      titleEnd: "za siguran korak napred",
-      titleBeforeBreak: "za siguran",
-      titleAfterBreak: "korak napred",
+      titleEnd: "za uspeh širom sveta",
+      titleBeforeBreak: "za uspeh",
+      titleAfterBreak: "širom sveta",
       paragraphs: [
         "International School pruža učenicima prostor da istraže svoja interesovanja, izaberu predmete koji odgovaraju njihovim planovima i postepeno preuzmu veću odgovornost za sopstveno obrazovanje. Uz Cambridge program, ličnog mentora i stručnu podršku pri izboru fakulteta, razvijaju znanje, samostalnost i sigurnost u svoje odluke.",
         "Međunarodna partnerstva škole dodatno im približavaju studije u inostranstvu kroz direktan kontakt sa predstavnicima univerziteta, posebne prezentacije studijskih programa i pristup stipendijama, pogodnostima pri upisu i finansijskoj podršci.",
@@ -169,10 +169,10 @@ export const landingContent = {
     stats: {
       title: "International School in numbers",
       items: [
-        { value: "26", label: "Best Cambridge students in the world" },
-        { value: "30", label: "Cambridge subjects" },
-        { value: "84", suffix: "%", label: "Satisfied students" },
-        { value: "82", suffix: "%", label: "Cambridge Exams passing rate" },
+        { value: "94", suffix: "%", label: "Cambridge exam pass rate" },
+        { value: "97", suffix: "%", label: "Satisfied students and parents" },
+        { value: "150+", label: "Student medals, awards and recognitions" },
+        { value: "30", label: "Best Cambridge students in the world" },
       ],
     },
     sectionSeven: {

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import isGrb from "../assets/is_grb.svg";
-import isProstor1 from "../assets/hero/is_prostor_1.png";
-import isProstor2 from "../assets/hero/is_prostor_2.JPG";
-import isProstor3 from "../assets/hero/is_prostor_3.JPG";
-import isProstor4 from "../assets/hero/is_prostor_4.png";
+import isProstor1 from "../assets/hero/is_prostor_1.jpg";
+import isProstor2 from "../assets/hero/is_prostor_2.jpg";
+import isProstor3 from "../assets/hero/is_prostor_3.jpg";
+import isProstor4 from "../assets/hero/is_prostor_4.jpg";
 import ministarstvoProsvet from "../assets/ministarstvo-prosvet.png";
 import cambridgeBlack from "../assets/cambridge_black.png";
-import heroVideo from "../assets/hero/international-school-new-space.mov";
+import heroVideo from "../assets/hero/international-school-new-space-720p.mov";
 
 import RotatingWords from "./RotatingWords";
 import { useLanguage } from "../i18n/LanguageContext";
@@ -94,6 +94,9 @@ const SectionHero = () => {
         </div>
 
         <div className="hero--paragraph-text">
+          <p className="hero--paragraph-eyebrow">
+            1,300 m² for Big Ideas and Even Bigger Achievements
+          </p>
           <h3>
             <span style={{ color: "#f2d4b0" }}>{content.eyebrowStart}</span> {content.eyebrowMiddle}{" "}
             <span style={{ color: "#f2d4b0" }}>{content.eyebrowAccent}</span> {content.eyebrowEnd}

@@ -363,6 +363,15 @@
         // margin: auto;
         margin-top: 235px;
 
+        .hero--paragraph-eyebrow {
+            margin: 0;
+            color: #354180;
+            font-size: 2.25em;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            line-height: 1.2;
+        }
+
         h3 {
             margin: 30px 0;
 
@@ -461,7 +470,7 @@
 .image-modal {
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: 2147483647;
   background: rgba(8, 12, 20, 0.78);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);

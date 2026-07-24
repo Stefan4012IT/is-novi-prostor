@@ -27,3 +27,18 @@ export function scheduleScrollTriggerUpdate() {
     ScrollTrigger.update();
   });
 }
+
+export function watchScrollTriggerPosition() {
+  let lastScrollY = window.scrollY;
+
+  const intervalId = window.setInterval(() => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY !== lastScrollY) {
+      lastScrollY = currentScrollY;
+      ScrollTrigger.update();
+    }
+  }, 16);
+
+  return () => window.clearInterval(intervalId);
+}
