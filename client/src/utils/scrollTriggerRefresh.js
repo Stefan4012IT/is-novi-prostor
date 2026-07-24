@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 let frameId;
+let updateFrameId;
 
 export function scheduleScrollTriggerRefresh() {
   if (frameId) cancelAnimationFrame(frameId);
@@ -14,6 +15,15 @@ export function scheduleScrollTriggerRefresh() {
   frameId = requestAnimationFrame(() => {
     frameId = undefined;
     ScrollTrigger.refresh();
+    ScrollTrigger.update();
+  });
+}
+
+export function scheduleScrollTriggerUpdate() {
+  if (updateFrameId) return;
+
+  updateFrameId = requestAnimationFrame(() => {
+    updateFrameId = undefined;
     ScrollTrigger.update();
   });
 }

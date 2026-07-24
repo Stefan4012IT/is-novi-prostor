@@ -14,6 +14,8 @@ function PinnedCtaSectionMobile() {
   const currentYear = new Date().getFullYear();
   const nextShort = (currentYear + 1).toString().slice(-2);
   const dynamicYears = `${currentYear}/${nextShort}`;
+  const schoolName = language === "sr" ? "International Schoola" : "International School";
+  const [ctaBefore, ctaAfter] = content.cta.split(schoolName);
 
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
@@ -84,7 +86,7 @@ function PinnedCtaSectionMobile() {
       <div className="btn-box" ref={ctaBoxRef}>
         <div className="cta-text">
           <h4>
-            {content.cta}
+            {ctaBefore}<strong>{schoolName}</strong>{ctaAfter}
           </h4>
 
           <a

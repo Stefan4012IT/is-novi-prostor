@@ -95,6 +95,8 @@ function PinnedCtaSection() {
   const currentYear = new Date().getFullYear();
   const nextShort = (currentYear + 1).toString().slice(-2);
   const dynamicYears = `${currentYear}/${nextShort}`;
+  const schoolName = language === "sr" ? "International Schoola" : "International School";
+  const [ctaBefore, ctaAfter] = content.cta.split(schoolName);
 
   return (
     <section className="section-7" ref={sectionRef}>
@@ -119,7 +121,7 @@ function PinnedCtaSection() {
       <div className="btn-box">
         <div className="floated-box" ref={boxRef}></div>
         <div className="cta-text">
-          <h4>{content.cta}</h4>
+          <h4>{ctaBefore}<strong>{schoolName}</strong>{ctaAfter}</h4>
           <a href="https://www.international-school.edu.rs/registration/">{content.enrollment.replace("{years}", dynamicYears)}</a>
         </div>
       </div>

@@ -3,14 +3,20 @@ import GlobalScrollTriggerReaper from "./components/common/GlobalScrollTriggerRe
 import Home from "./pages/Home";
 import { useEffect } from "react";
 import { LanguageProvider } from "./i18n/LanguageContext";
-import { scheduleScrollTriggerRefresh } from "./utils/scrollTriggerRefresh";
+import {
+  scheduleScrollTriggerRefresh,
+  scheduleScrollTriggerUpdate,
+} from "./utils/scrollTriggerRefresh";
 
 function App() {
   useEffect(() => {
     let isMounted = true;
     const refresh = () => scheduleScrollTriggerRefresh();
+    const update = () => scheduleScrollTriggerUpdate();
 
     window.addEventListener("load", refresh);
+    window.addEventListener("scroll", update, { passive: true });
+    document.addEventListener("scroll", update, { passive: true });
     document.fonts?.ready.then(() => {
       if (isMounted) refresh();
     });
@@ -20,6 +26,8 @@ function App() {
     return () => {
       isMounted = false;
       window.removeEventListener("load", refresh);
+      window.removeEventListener("scroll", update);
+      document.removeEventListener("scroll", update);
     };
   }, []);
 
