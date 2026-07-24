@@ -23,6 +23,7 @@ import FormSection from '../components/FormSection';
 import TitleRevealHomeHolder from '../components/TitleRevealHomeHolder';
 import InfiniteSOSScrollWrapper from '../components/infiniteScrollSOS/InfiniteSOSScrollWrapper';
 import TestimonialsSection from '../components/testimonials/TestimonialsSection';
+import AwardsSection from '../components/AwardsSection';
 import StatsSection from '../components/StatsSection';
 import PartnersSection from '../components/PartnersSection';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -34,14 +35,18 @@ import { scheduleScrollTriggerRefresh } from '../utils/scrollTriggerRefresh';
 function Home() {
   const { language } = useLanguage();
   const content = landingContent[language];
+  const [heroVideoStatus, setHeroVideoStatus] = useState("loading");
 
   useEffect(() => {
     scheduleScrollTriggerRefresh();
   }, [language]);
     return (
       <main className="home">
-        <Preloader />
-        <SectionHero />
+        <Preloader videoStatus={heroVideoStatus} />
+        <SectionHero
+          onVideoReady={() => setHeroVideoStatus("ready")}
+          onVideoError={() => setHeroVideoStatus("error")}
+        />
         <FormSection {...content.form} />
         
         <TitleRevealHomeHolder />
@@ -55,6 +60,7 @@ function Home() {
         
         <PinnedCtaSectionWrapper />
         <ParallaxSection8Wrapper />
+        <AwardsSection />
         <TestimonialsSection />
         <ParallaxSection9Wrapper />
 

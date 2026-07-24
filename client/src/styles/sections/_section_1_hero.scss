@@ -389,6 +389,10 @@
             width: 50%;
         }
 
+        @media only screen and (min-width: 1601px) and (max-width: 1919px) {
+            margin-top: 210px;
+        }
+
         @media only screen and (max-width: 1280px) {
             width: 50%;
         }
@@ -401,7 +405,11 @@
             margin: 5vh 0;
             width: 100%;
             margin-left: auto;
-            margin-top: 0px;
+            margin-top: 4vh;
+
+            h3 {
+                margin: 12px 0 30px;
+            }
         }
 
         @media only screen and (max-width: 776px) {

@@ -10,6 +10,7 @@ export const landingContent = {
       eyebrowAccent: "secondary school",
       eyebrowEnd: "life",
       text: "International School Secondary dobija svoj prostor na novoj adresi na Terazijama, u srcu Beograda, oblikovan prema ritmu i potrebama srednjoškolaca. Na 1.300 m², sa 17 savremeno opremljenih učionica i velikim amfiteatrom, nastava je osmišljena za aktivan rad, različite grupe i celovito iskustvo učenja. Mesto za učenje, stvaranje prijateljstava, nove ideje i sve što dolazi.",
+      additionalText: "Tako će srednjoškolci dobiti okruženje oblikovano prema njihovim potrebama, dok Primary i Lower Secondary nastavljaju rad u poznatom okruženju na Vračaru.",
     },
     form: {
       eyebrow: "Prijavite se odmah",
@@ -99,7 +100,7 @@ export const landingContent = {
       text: "Kao akreditovana Cambridge International School, International School pruža učenicima obrazovanje zasnovano na međunarodno priznatim IGCSE, AS i A Level programima. Nastava na engleskom jeziku, pažljivo odabran izbor predmeta i Cambridge kvalifikacije pružaju snažnu osnovu za nastavak školovanja i otvaraju vrata fakulteta u Srbiji i širom sveta.",
     },
     testimonials: {
-      heading: "Utisci iz International Schoola",
+      heading: "Neizmerno smo zahvalni International Schoolu",
       previous: "Prethodni utisak",
       next: "Sledeći utisak",
       goTo: "Prikaži utisak",
@@ -110,6 +111,10 @@ export const landingContent = {
         { subtitle: "MATURANTKINJA", title: "Istinski globalno i dinamično okruženje za učenje", text: "„Najviše mi se dopadaju međunarodni kurikulum i okruženje škole. Istražujemo globalne teme koje oblikuju današnji svet koji se neprestano menja, razmenjujemo ideje sa vršnjacima i učimo iz različitih perspektiva.”" },
         { subtitle: "UČENICA", title: "Naši nastavnici su pristupačni i uvek spremni da pomognu", text: "„Koristimo tehnologiju u učenju, što nam sve čini lakšim. Naši nastavnici su pristupačni i uvek spremni da nam dodatno objasne gradivo. Imamo i nekoliko nivoa podrške, uključujući mentore koje sami biramo i sa kojima se sastajemo svake nedelje kako bismo razgovarali o problemima ili svemu što nas muči.”" },
       ],
+    },
+    awards: {
+      title: "Svetske nagrade kao potvrda izvrsnosti",
+      text: "Međunarodna priznanja, svetska prepoznatost i merljivi rezultati International Schoola i kompletne Savremene obrazovne grupe samo su još jedna potvrda kvaliteta programa i uspeha naših učenika.",
     },
     sectionNine: {
       title: "Your child's future just got bigger.",
@@ -129,6 +134,7 @@ export const landingContent = {
       eyebrowAccent: "secondary school",
       eyebrowEnd: "life",
       text: "International School Secondary is gaining its own space at a new address on Terazije, in the heart of Belgrade, shaped around the rhythm and needs of secondary school students. Spanning 1,300 m², with 17 fully equipped classrooms and a large amphitheatre, teaching is designed for active learning, different group formats and a complete learning experience. A place to learn, build friendships, develop new ideas and embrace everything ahead.",
+      additionalText: "Secondary school students will therefore gain an environment shaped around their needs, while Primary and Lower Secondary continue to learn in their familiar setting in Vračar.",
     },
     form: {
       eyebrow: "Apply now",
@@ -194,7 +200,7 @@ export const landingContent = {
       text: "As an accredited Cambridge International School, International School provides education based on internationally recognised IGCSE, AS and A Level programmes. Teaching in English, a carefully selected choice of subjects and Cambridge qualifications provide a strong foundation for further study and open doors to universities in Serbia and around the world.",
     },
     testimonials: {
-      heading: "Voices from International School",
+      heading: "We are immensely grateful to International School",
       previous: "Previous testimonial",
       next: "Next testimonial",
       goTo: "Show testimonial",
@@ -205,6 +211,10 @@ export const landingContent = {
         { subtitle: "GRADUATE", title: "A truly global and dynamic learning environment", text: "“What I like most are the international curriculum and the school's environment. We explore global topics shaping today's ever-changing world, exchange ideas with our peers and learn from different perspectives.”" },
         { subtitle: "STUDENT", title: "Our teachers are approachable and always ready to help", text: "“We use technology in learning, which makes everything easier. Our teachers are approachable and always ready to explain the material further. We also have several levels of support, including mentors we choose ourselves and meet with every week to discuss problems or anything on our minds.”" },
       ],
+    },
+    awards: {
+      title: "Global awards as a mark of excellence",
+      text: "International recognition, global visibility and measurable results from International School and the Modern Education Group further confirm the quality of our programmes and our students' success.",
     },
     sectionNine: {
       title: "Your child's future just got more room to grow.",

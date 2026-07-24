@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import isGrb from "../assets/is_grb.svg";
 import isProstor1 from "../assets/hero/is_prostor_1.jpg";
 import isProstor2 from "../assets/hero/is_prostor_2.jpg";
@@ -12,8 +12,9 @@ import RotatingWords from "./RotatingWords";
 import { useLanguage } from "../i18n/LanguageContext";
 import { landingContent } from "../i18n/landingContent";
 
-const SectionHero = () => {
+const SectionHero = ({ onVideoReady, onVideoError }) => {
   const [activeImage, setActiveImage] = useState(null);
+  const videoRef = useRef(null);
   const { language, setLanguage } = useLanguage();
   const content = landingContent[language].hero;
 
@@ -33,6 +34,12 @@ const SectionHero = () => {
     setActiveImage(null);
     document.body.style.overflow = "";
   };
+
+  useEffect(() => {
+    if (videoRef.current?.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
+      onVideoReady?.();
+    }
+  }, [onVideoReady]);
 
   return (
     <section className="hero section-1">
@@ -84,12 +91,15 @@ const SectionHero = () => {
             words={content.rotatingWords}
           />
           <video
+            ref={videoRef}
             src={heroVideo}
             autoPlay
             loop
             muted
             playsInline
-            preload="metadata"
+            preload="auto"
+            onCanPlay={onVideoReady}
+            onError={onVideoError}
           />
         </div>
 
@@ -103,6 +113,9 @@ const SectionHero = () => {
           </h3>
           <p>
             {content.text}
+          </p>
+          <p className="hero--paragraph-additional">
+            {content.additionalText}
           </p>
         </div>
       </div>

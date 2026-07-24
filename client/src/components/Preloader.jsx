@@ -1,31 +1,32 @@
 import React, { useEffect, useState } from "react";
 import isGrb from '../assets/is_grb.svg';
 
-const Preloader = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
+const MINIMUM_DISPLAY_TIME = 2000;
+
+const Preloader = ({ videoStatus }) => {
+  const [minimumTimeElapsed, setMinimumTimeElapsed] = useState(false);
+  const isLoaded = minimumTimeElapsed && videoStatus !== "loading";
 
   useEffect(() => {
-    // Blokiraj scroll
+    const previousOverflowY = document.body.style.overflowY;
     document.body.style.overflowY = "hidden";
 
-    const timer = setTimeout(() => {
-      setIsLoaded(true);
-      document.body.style.overflowY = "scroll";
-    }, 800);
-
-    const handleLoad = () => {
-      setIsLoaded(true);
-      document.body.style.overflowY = "scroll";
-    };
-
-    window.addEventListener("load", handleLoad);
+    const timer = window.setTimeout(
+      () => setMinimumTimeElapsed(true),
+      MINIMUM_DISPLAY_TIME,
+    );
 
     return () => {
       clearTimeout(timer);
-      window.removeEventListener("load", handleLoad);
-      document.body.style.overflowY = "scroll"; // fallback
+      document.body.style.overflowY = previousOverflowY;
     };
   }, []);
+
+  useEffect(() => {
+    if (isLoaded) {
+      document.body.style.overflowY = "scroll";
+    }
+  }, [isLoaded]);
 
   if (isLoaded) return null;
 
