@@ -4,6 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import img_3 from "../../assets/cambridge-international-school.jpg";
 import { useLanguage } from "../../i18n/LanguageContext";
 import { landingContent } from "../../i18n/landingContent";
+import { scheduleScrollTriggerRefresh } from "../../utils/scrollTriggerRefresh";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -81,7 +82,13 @@ function ParallaxSection8Mobile() {
         <p>{content.text}</p>
       </div>
 
-      <img src={img_3} alt="Get in touch" className="sos_majka_dete" ref={imgRef} />
+      <img
+        src={img_3}
+        alt="Get in touch"
+        className="sos_majka_dete"
+        ref={imgRef}
+        onLoad={scheduleScrollTriggerRefresh}
+      />
     </section>
   );
 }

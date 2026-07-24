@@ -15,7 +15,6 @@ import InfiniteZoneScrollWrapper_IV_sprat from '../components/infiniteScroll/4_s
 import PinnedCtaSectionWrapper from '../components/pinnedCtaSection/pinnedCtaWrapper';
 import ParallaxSection8Wrapper from '../components/parallaxSection-8/ParallaxSection8Wrapper';
 import ParallaxSection9Wrapper from '../components/parallaxSection-9/ParallaxSection9Wrapper';
-import ScrollTrigger from "gsap/ScrollTrigger";
 import FloatingWrapper from '../components/floatingImagesSection/FloatingWrapper';
 import StackScrollWrapper from '../components/stackScroll/StackScrollWrapper';
 import Preloader from '../components/Preloader';
@@ -28,6 +27,7 @@ import StatsSection from '../components/StatsSection';
 import PartnersSection from '../components/PartnersSection';
 import { useLanguage } from '../i18n/LanguageContext';
 import { landingContent } from '../i18n/landingContent';
+import { scheduleScrollTriggerRefresh } from '../utils/scrollTriggerRefresh';
 
 
 
@@ -36,10 +36,7 @@ function Home() {
   const content = landingContent[language];
 
   useEffect(() => {
-    setTimeout(() => {
-      console.log("🔥 REFRESHING SCROLLTRIGGER");
-      ScrollTrigger.refresh();
-    }, 1000);
+    scheduleScrollTriggerRefresh();
   }, [language]);
     return (
       <main className="home">

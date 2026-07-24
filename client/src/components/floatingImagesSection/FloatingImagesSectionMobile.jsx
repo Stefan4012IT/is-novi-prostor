@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { scheduleScrollTriggerRefresh } from "../../utils/scrollTriggerRefresh";
 
 import img_1 from "../../assets/floating/international-school/international-school-floating-01.png";
 import img_2 from "../../assets/floating/international-school/international-school-floating-02.png";
@@ -20,31 +21,39 @@ function FloatingImagesSection() {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const images = sectionRef.current.querySelectorAll(".float-image");
-  
-    images.forEach((img, i) => {
-      const yFrom = gsap.utils.random(-10, 30);
-      const scaleFrom = gsap.utils.random(1.05, 1.25);
-  
-      gsap.fromTo(
-        img,
-        {
-          y: yFrom,
-          scale: scaleFrom,
-        },
-        {
-          y: -yFrom,
-          scale: 1,
-          ease: "none",
-          scrollTrigger: {
-            trigger: img, // svaki img kao poseban trigger
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true,
-          },
-        }
-      );
-    });
+    const ctx = gsap.context(() => {
+      const images = sectionRef.current.querySelectorAll(".float-image");
+
+      images.forEach((img) => {
+        const yFrom = gsap.utils.random(-10, 30);
+        const trigger = {
+          trigger: img,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        };
+
+        gsap.fromTo(
+          img,
+          { y: yFrom },
+          {
+            y: -yFrom,
+            ease: "none",
+            scrollTrigger: trigger,
+          }
+        );
+
+        gsap.timeline({ scrollTrigger: { ...trigger } })
+          .to(img, { scale: 1.08, duration: 0.25, ease: "sine.inOut" })
+          .to(img, { scale: 1, duration: 0.25, ease: "sine.inOut" })
+          .to(img, { scale: 1.06, duration: 0.25, ease: "sine.inOut" })
+          .to(img, { scale: 1, duration: 0.25, ease: "sine.inOut" });
+      });
+
+      scheduleScrollTriggerRefresh();
+    }, sectionRef);
+
+    return () => ctx.revert();
   }, []);
 
   return (

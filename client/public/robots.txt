@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://new.international-school.com/sitemap.xml

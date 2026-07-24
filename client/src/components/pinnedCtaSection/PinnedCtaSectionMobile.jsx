@@ -4,6 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import ctaImg from "../../assets/international-school-students-960x500.jpg";
 import { useLanguage } from "../../i18n/LanguageContext";
 import { landingContent } from "../../i18n/landingContent";
+import { scheduleScrollTriggerRefresh } from "../../utils/scrollTriggerRefresh";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -69,7 +70,12 @@ function PinnedCtaSectionMobile() {
         </h2>
       </div>
 
-      <img src={ctaImg} alt="Kids" className="kids-img" />
+      <img
+        src={ctaImg}
+        alt="Kids"
+        className="kids-img"
+        onLoad={scheduleScrollTriggerRefresh}
+      />
 
       <div className="text" ref={bodyTextRef}>
         {content.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}

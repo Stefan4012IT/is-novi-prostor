@@ -4,6 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import img_1 from "../../assets/international-school-map.jpg";
 import { useLanguage } from "../../i18n/LanguageContext";
 import { landingContent } from "../../i18n/landingContent";
+import { scheduleScrollTriggerRefresh } from "../../utils/scrollTriggerRefresh";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -122,7 +123,13 @@ function ParallaxSection9Mobile() {
         </p>
       </div>
 
-      <img src={img_1} alt="Mapa lokacije" className="img_gttouch" ref={imgRef} />
+      <img
+        src={img_1}
+        alt="Mapa lokacije"
+        className="img_gttouch"
+        ref={imgRef}
+        onLoad={scheduleScrollTriggerRefresh}
+      />
     </section>
   );
 }

@@ -1,17 +1,26 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import GlobalScrollTriggerReaper from "./components/common/GlobalScrollTriggerReaper";
 import Home from "./pages/Home";
-import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import { LanguageProvider } from "./i18n/LanguageContext";
+import { scheduleScrollTriggerRefresh } from "./utils/scrollTriggerRefresh";
 
 function App() {
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      ScrollTrigger.refresh();
-    }, 1000); // sačekaj da se sve komponente učitaju
-  
-    return () => clearTimeout(timeout);
+    let isMounted = true;
+    const refresh = () => scheduleScrollTriggerRefresh();
+
+    window.addEventListener("load", refresh);
+    document.fonts?.ready.then(() => {
+      if (isMounted) refresh();
+    });
+
+    refresh();
+
+    return () => {
+      isMounted = false;
+      window.removeEventListener("load", refresh);
+    };
   }, []);
 
   return (

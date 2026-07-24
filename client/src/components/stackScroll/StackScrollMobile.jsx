@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { scheduleScrollTriggerRefresh } from "../../utils/scrollTriggerRefresh";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -61,6 +62,8 @@ function StackScrollMobile({ children }) {
           i
         );
       });
+
+      scheduleScrollTriggerRefresh();
     }, containerRef);
 
     return () => ctx.revert();
