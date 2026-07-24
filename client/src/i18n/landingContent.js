@@ -100,7 +100,7 @@ export const landingContent = {
       text: "Kao akreditovana Cambridge International School, International School pruža učenicima obrazovanje zasnovano na međunarodno priznatim IGCSE, AS i A Level programima. Nastava na engleskom jeziku, pažljivo odabran izbor predmeta i Cambridge kvalifikacije pružaju snažnu osnovu za nastavak školovanja i otvaraju vrata fakulteta u Srbiji i širom sveta.",
     },
     testimonials: {
-      heading: "Neizmerno smo zahvalni International Schoolu",
+      heading: "„Neizmerno smo zahvalni International Schoolu”",
       previous: "Prethodni utisak",
       next: "Sledeći utisak",
       goTo: "Prikaži utisak",
@@ -167,10 +167,10 @@ export const landingContent = {
       subtitle: "What can you expect from the new space?",
     },
     infinite: [
-      { title: "Classrooms designed for every teaching format", text: "The new space includes 17 classrooms for larger and smaller groups, in line with subject choices. Designer furniture, interactive displays, ambient microphones and live-streaming cameras enable a modern learning experience, in and beyond the classroom." },
-      { title: "A new dynamic in the classroom", text: "Instead of traditional teacher's desks, teachers have lecterns that encourage movement around the classroom and direct work with students. The space is designed to support interactive teaching, active participation and learning through experience." },
+      { title: "Classrooms tailored to every teaching format for maximum results", text: "The new space includes 17 classrooms for larger and smaller groups, in line with subject choices. Designer furniture, interactive displays, ambient microphones and live-streaming cameras enable a modern learning experience, in and beyond the classroom." },
+      { title: "Interactive ways of working for more active learning", text: "Instead of traditional teacher's desks, teachers have lecterns that encourage movement around the classroom and direct work with students. The space is designed to support interactive teaching, active participation and learning through experience." },
       { title: "A big stage for bold ideas and open dialogue", text: "A large amphitheatre with conference seating, writing surfaces and a movable Ultra HD interactive monitor is designed for presentations, debates and guest lectures. In a TED Talk-inspired atmosphere, students will present their ideas, projects and achievements." },
-      { title: "A school community in the heart of Belgrade", text: "The entrance area, with multifunctional plinths for displaying student work and spaces to pause, looks out over Terazije and central Belgrade. Glass-fronted offices further remove barriers between students and staff, creating an open community focused on everyday work, exchange and progress." },
+      { title: "A Cambridge school community in the heart of Belgrade", text: "The entrance area, with multifunctional plinths for displaying student work and spaces to pause, looks out over Terazije and central Belgrade. Glass-fronted offices further remove barriers between students and staff, creating an open community focused on everyday work, exchange and progress." },
     ],
     stats: {
       title: "International School in numbers",
@@ -183,9 +183,9 @@ export const landingContent = {
     },
     sectionSeven: {
       titleAccent: "Knowledge and support",
-      titleEnd: "for a confident step forward",
-      titleBeforeBreak: "for a confident step",
-      titleAfterBreak: "forward",
+      titleEnd: "for success around the world",
+      titleBeforeBreak: "for success",
+      titleAfterBreak: "around the world",
       paragraphs: [
         "International School gives students the space to explore their interests, choose subjects that match their plans and gradually take greater responsibility for their own education. Through the Cambridge programme, a personal mentor and expert university guidance, they build knowledge, independence and confidence in their decisions.",
         "The school's international partnerships bring study abroad closer through direct contact with university representatives, dedicated programme presentations and access to scholarships, admissions benefits and financial support.",
@@ -200,7 +200,7 @@ export const landingContent = {
       text: "As an accredited Cambridge International School, International School provides education based on internationally recognised IGCSE, AS and A Level programmes. Teaching in English, a carefully selected choice of subjects and Cambridge qualifications provide a strong foundation for further study and open doors to universities in Serbia and around the world.",
     },
     testimonials: {
-      heading: "We are immensely grateful to International School",
+      heading: "“We are immensely grateful to International School”",
       previous: "Previous testimonial",
       next: "Next testimonial",
       goTo: "Show testimonial",

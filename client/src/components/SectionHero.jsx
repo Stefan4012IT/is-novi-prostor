@@ -105,7 +105,7 @@ const SectionHero = ({ onVideoReady, onVideoError }) => {
 
         <div className="hero--paragraph-text">
           <p className="hero--paragraph-eyebrow">
-            1,300 m² for Big Ideas and Even Bigger Achievements
+            1,300 m² in Terazije for Big Ideas and Even Bigger Achievements
           </p>
           <h3>
             <span style={{ color: "#f2d4b0" }}>{content.eyebrowStart}</span> {content.eyebrowMiddle}{" "}
