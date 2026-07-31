@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import isGrb from "../assets/is_grb.svg";
-import isProstor1 from "../assets/hero/is_prostor_1.jpg";
+import interactiveLightmix from "../assets/hero/interactive-lightmix.jpg";
 import isProstor2 from "../assets/hero/is_prostor_2.jpg";
 import isProstor3 from "../assets/hero/is_prostor_3.jpg";
 import isProstor4 from "../assets/hero/is_prostor_4.jpg";
@@ -19,7 +19,7 @@ const SectionHero = ({ onVideoReady, onVideoError }) => {
   const content = landingContent[language].hero;
 
   const heroImages = [
-    { src: isProstor1, alt: "International School prostor 1" },
+    { src: interactiveLightmix, alt: "International School prostor 1" },
     { src: isProstor2, alt: "International School prostor 2" },
     { src: isProstor3, alt: "International School prostor 3" },
     { src: isProstor4, alt: "International School prostor 4" },
